@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+
+@layer utilities {
+  /* Custom Color Palette based on the design */
+  .bg-physio-bg { background-color: #f5ede8; }
+  .bg-physio-card { background-color: #fefcfb; }
+  .bg-physio-secondary { background-color: #aeb6bf; }
+  
+  .text-physio-text { color: #333333; }
+  .text-physio-accent { color: #d9a68e; }
+  
+  /* Button specific */
+  .bg-physio-accent { background-color: #d9a68e; }
+  .bg-physio-dark { background-color: #333333; }
+}
+
+/* Soft scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5ede8; /* Default background */
+  color: #333333;
+}
