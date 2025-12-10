@@ -1,30 +1,65 @@
-import React from 'react';
+import { useState } from 'react';
 
-const Header: React.FC = () => {
-  const phoneNumber = "+911234567890"; // Replace with actual number
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const phoneNumber = "+919461203939"; // Replace with actual number
 
   return (
-    <header className="py-6 px-4 md:px-12 flex justify-between items-center max-w-7xl mx-auto">
-      <div className="text-2xl font-bold text-physio-text">
-        Physio<span className="text-physio-accent">Care</span>
-      </div>
-      
-      <nav className="hidden md:flex space-x-8 text-physio-text font-medium">
-        <a href="#specialties" className="hover:text-physio-accent transition">Specialties</a>
-        <a href="#about" className="hover:text-physio-accent transition">About Us</a>
-        <a href="#contact" className="hover:text-physio-accent transition">Location</a>
-      </nav>
+    <header className="bg-physio-bg backdrop-blur-md sticky top-0 z-50 py-4 ">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
+        
+        {/* Logo Section */}
+        <div className="flex items-center gap-2">
+          <div className="text-2xl font-bold text-gray-900 flex flex-col leading-none">
+            <span>Re<span className="text-gray-400">Fit</span></span>
+            {/* <span className="text-[0.6rem] text-gray-500 tracking-widest uppercase font-medium">Advance</span> */}
+          </div>
+        </div>
 
-      {/* Call to Action Button for Number */}
-      <a 
-        href={`tel:${phoneNumber}`}
-        className="bg-physio-text text-white px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition flex items-center gap-2 shadow-lg"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-1.36 1.744a19.45 19.45 0 01-10.15-10.15l1.744-1.36c.362-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-        </svg>
-        Call Now
-      </a>
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">
+          <a href="#" className="hover:text-black transition flex items-center gap-1">
+            Services 
+          </a>
+          <a href="#" className="hover:text-black transition flex items-center gap-1">
+            Conditions Treated 
+          </a>
+          <a href="#" className="hover:text-black transition">Service Fees</a>
+          <a href="#" className="hover:text-black transition flex items-center gap-1">
+            About Us 
+          </a>
+        </nav>
+
+        {/* CTA Button */}
+        <div className="hidden md:block">
+          <a 
+            href={`tel:${phoneNumber}`}
+            className="bg-physio-accent text-white px-6 py-3 rounded-full font-bold shadow-lg shadow-orange-200 hover:shadow-orange-300 transition hover:-translate-y-0.5"
+          >
+            Call {phoneNumber}
+          </a>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button className="md:hidden p-2 text-gray-600" onClick={() => setIsOpen(!isOpen)}>
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isOpen && (
+        <div className="md:hidden absolute top-full left-0 w-full bg-physio-bg  p-4 flex flex-col gap-4">
+          <a href="#" className="font-medium text-gray-700">Services</a>
+          <a href="#" className="font-medium text-gray-700">Conditions Treated</a>
+          <a href="#" className="font-medium text-gray-700">Service Fees</a>
+          <a 
+            href={`tel:${phoneNumber}`}
+            className="bg-physio-accent text-white text-center py-3 rounded-full font-bold"
+          >
+            Call Now
+          </a>
+        </div>
+      )}
     </header>
   );
 };

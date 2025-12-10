@@ -2,25 +2,15 @@
 
 
 @layer utilities {
-  /* Custom Color Palette based on the design */
-  .bg-physio-bg { background-color: #f5ede8; }
-  .bg-physio-card { background-color: #fefcfb; }
-  .bg-physio-secondary { background-color: #aeb6bf; }
+  .bg-physio-bg { background-color: #f8fafc; } /* Lighter background */
+  .text-physio-dark { color: #111827; } /* Deep Navy/Black */
+  .bg-physio-dark { background-color: #111827; }
   
-  .text-physio-text { color: #333333; }
-  .text-physio-accent { color: #d9a68e; }
-  
-  /* Button specific */
-  .bg-physio-accent { background-color: #d9a68e; }
-  .bg-physio-dark { background-color: #333333; }
+  /* The Amber/Orange accent from the new design */
+  .bg-physio-accent { background-color: #f59e0b; } 
+  .text-physio-accent { color: #f59e0b; }
+  .border-physio-accent { border-color: #f59e0b; }
 }
 
-/* Soft scroll behavior */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #f5ede8; /* Default background */
-  color: #333333;
-}
+html { scroll-behavior: smooth; }
+body { background-color: #f8fafc; color: #1f2937; }

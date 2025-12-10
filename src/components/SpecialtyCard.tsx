@@ -1,4 +1,4 @@
-import React from 'react';
+
 import type { SpecialtyItem } from '../data/specialties';
 
 
@@ -15,11 +15,11 @@ const SpecialtyCard: React.FC<Props> = ({ data }) => {
             alt={data.title} 
             className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-physio-text/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-physio-text/50 to-transparent"></div>
         <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white">{data.title}</h3>
       </div>
       
-      <div className="p-6 flex-grow flex flex-col">
+      <div className="p-6 grow flex flex-col">
         <p className="text-gray-600 mb-6 italic">{data.description}</p>
         
         <div className="mt-auto">
