@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Phone } from "lucide-react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,14 +32,7 @@ const Header = () => {
         </nav>
 
         {/* CTA Button */}
-        <div className="hidden md:block">
-          <a 
-            href={`tel:${phoneNumber}`}
-            className="bg-physio-accent text-white px-6 py-3 rounded-full font-bold shadow-lg shadow-orange-200 hover:shadow-orange-300 transition hover:-translate-y-0.5"
-          >
-            Call {phoneNumber}
-          </a>
-        </div>
+        
 
         {/* Mobile Menu Button */}
         <button className="md:hidden p-2 text-gray-600" onClick={() => setIsOpen(!isOpen)}>

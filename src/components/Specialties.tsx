@@ -39,41 +39,52 @@ const Specialties = () => {
       <div className="max-w-7xl mx-auto">
 
         {/* SECTION HEADER */}
-        <div className="mb-14">
-          <h2 className="text-4xl font-bold text-gray-900">
-            Our <span className="text-primary text-physio-accent">Specialties</span>
-          </h2>
-          <p className="text-gray-600 mt-3 max-w-xl">
-            We provide advanced physiotherapy treatments tailored to orthopedic,
-            neurological, and sports-related conditions.
-          </p>
-        </div>
+        <div className="mb-14 text-center">
+  <h2 className="text-4xl font-bold text-gray-900">
+    Our <span className="text-physio-accent">Specialties</span>
+  </h2>
+
+  <p className="text-gray-600 mt-3 max-w-xl mx-auto text-center">
+    We provide advanced physiotherapy treatments tailored to orthopedic,
+    neurological, and sports-related conditions.
+  </p>
+</div>
 
         {/* GRID */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {specialties.map((item, i) => (
             <div
-              key={i}
-              className="bg-white rounded-xl p-8 shadow shadow-md hover:scale-110 transition-all"
-            >
-              {/* ICON */}
-              <div className="mb-5 text-blue-600">{item.icon}</div>
+  key={i}
+  className="
+    bg-[#FAF7F2]
+    rounded-2xl
+    p-8
+    border border-black/5
+    shadow-sm
+    hover:shadow-lg hover:scale-105
+    hover:-translate-y-1
+    transition-all duration-300
+  "
+>
+  {/* ICON */}
+  <div className="mb-5 text-primary text-blue-500">{item.icon}</div>
 
-              {/* TITLE */}
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                {item.title}
-              </h3>
+  {/* TITLE */}
+  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+    {item.title}
+  </h3>
 
-              {/* DESCRIPTION */}
-              <p className="text-gray-600 text-[15px] leading-relaxed mb-5">
-                {item.desc}
-              </p>
+  {/* DESCRIPTION */}
+  <p className="text-gray-600 text-[15px] leading-relaxed mb-5">
+    {item.desc}
+  </p>
 
-              {/* BUTTON */}
-              <button className="flex items-center gap-2 text-primary font-medium hover:underline ">
-                Learn More <ArrowRight size={18} />
-              </button>
-            </div>
+  {/* BUTTON */}
+  <button className="flex items-center gap-2 text-primary font-medium hover:underline">
+    Learn More <ArrowRight size={18} />
+  </button>
+</div>
+
           ))}
         </div>
       </div>

@@ -70,7 +70,7 @@ const Conditions = () => {
           ].map((section, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl p-10 border border-gray-200 shadow-sm hover:shadow-xl transition-all"
+              className="bg-white rounded-3xl p-10 border border-gray-200 shadow-sm hover:shadow-xl hover:scale-105 transition-all"
             >
               {/* Heading with circular icon */}
               <div className=" items-center  mb-8">
