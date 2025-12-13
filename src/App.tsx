@@ -1,6 +1,8 @@
 
+import Conditions from './components/Conditions';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Specialties from './components/Specialties';
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Specialties/>
+        <Conditions/>
         {/* You can add the previous Specialty Section here if desired */}
       </main>
     </div>
