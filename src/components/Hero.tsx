@@ -67,42 +67,53 @@ const Hero = () => {
               </div>
 
               {/* 2. Top Right: Text Box with Circle Button */}
-              <div className="bg-white p-8 rounded-4xl flex flex-col justify-between relative shadow-sm border border-gray-100">
-                <div>
-                  <h3 className="text-xl font-normal text-gray-900 mb-2">Resolve Your <span className="font-bold">Physiotherapy Issues </span>with Expert Care</h3>
-                  <div className="w-full h-px bg-gray-200 my-4"></div>
-                  <p className="text-sm text-gray-500">Discover our comprehensive services designed to help you recover, strengthen, and thrive.</p>
-                </div>
-                
-                {/* Rotating Text Circle Button */}
-                <div className="self-end mt-4 relative w-20 h-20 flex items-center justify-center cursor-pointer hover:scale-105 transition-transform">
-                  <div className="absolute inset-0 border border-gray-200 rounded-full animate-spin-slow">
-                     {/* Simplified visual for the rotating text */}
-                  </div>
-                  <div className="relative">
-  {/* PING ANIMATION */}
-  <span className="absolute inset-0 w-full h-full rounded-full bg-blue-600/40 animate-ping"></span>
+             <div className="bg-white p-8 rounded-4xl flex flex-col justify-between relative shadow-sm border border-gray-100">
 
-  {/* MAIN ICON CIRCLE */}
-  <div className="bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg relative">
-    <svg
-      className="w-5 h-5 -rotate-45"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M14 5l7 7m0 0l-7 7m7-7H3"
-      ></path>
-    </svg>
+  {/* TEXT CONTENT */}
+  <div>
+    <h3 className="text-xl font-normal text-gray-900 mb-1">
+      Resolve Your <span className="font-bold">Physiotherapy Issues</span> with Expert Care
+    </h3>
+
+    {/* DOCTOR NAME */}
+    <p className="text-sm text-gray-500">
+      Dr. Rajeev Khinchi <span className="text-gray-400">| Consultant Physiotherapist</span>
+    </p>
+
+    <div className="w-full h-px bg-gray-200 my-4"></div>
+
+    <p className="text-sm text-gray-500">
+      Discover our comprehensive services designed to help you recover,
+      strengthen, and thrive.
+    </p>
+  </div>
+
+  {/* BOTTOM ROW */}
+  <div className="flex items-center justify-between mt-6">
+    {/* HAPPY PATIENTS */}
+    <div className="flex flex-col">
+      <span className="text-2xl font-bold text-gray-900">10K+</span>
+      <span className="text-sm text-gray-500">Happy Patients</span>
+    </div>
+
+    {/* ROTATING BUTTON */}
+    <div className="relative w-20 h-20 flex items-center justify-center cursor-pointer hover:scale-105 transition-transform">
+      <div className="absolute inset-0 border border-gray-200 rounded-full animate-spin-slow"></div>
+
+      <div className="relative">
+        <span className="absolute inset-0 w-full h-full rounded-full bg-blue-600/40 animate-ping"></span>
+
+        <div className="bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg relative">
+          <svg className="w-5 h-5 -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-                </div>
-              </div>
+
 
               {/* 3. Bottom Right: Small Image */}
               <div className="relative rounded-4xl overflow-hidden group">
