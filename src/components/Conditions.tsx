@@ -1,4 +1,5 @@
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Dumbbell, Bone, Brain } from "lucide-react";
+import type { JSX } from "react";
 
 const sports = [
   "Heel Pain",
@@ -34,58 +35,63 @@ const neuro = [
   "Cerebral Palsy",
 ];
 
+// ICON MAP
+const iconMap: Record<string, JSX.Element> = {
+  "Sports Physiotherapy": <Dumbbell size={26} className="text-primary" />,
+  "Ortho Physiotherapy": <Bone size={26} className="text-primary" />,
+  "Neuro Physiotherapy": <Brain size={26} className="text-primary" />,
+};
+
 const Conditions = () => {
   return (
-    <section className="py-28 px-6 bg-[#F9FAFB]">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-28 px-6 relative bg-[#F5F7FA]">
+      <div className="max-w-7xl mx-auto relative z-10">
 
         {/* HEADER */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-            Conditions We <span className="text-primary">Treat</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-physio-accent ">
+            Conditions <span className="text-primary text-gray-900">We Treat</span>
           </h2>
 
           <div className="w-20 h-1 bg-primary mx-auto mt-4 rounded-full"></div>
+
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
-            Expert physiotherapy care for sports injuries, joint disorders, spine issues,
-            neurological problems and chronic pain conditions.
+            We offer advanced physiotherapy solutions for orthopedic, neurological,
+            spine and sports-related conditions.
           </p>
         </div>
 
-        {/* 3 CARD COLUMNS */}
+        {/* 3 COLUMNS */}
         <div className="grid md:grid-cols-3 gap-10">
-
-          {/* EACH CATEGORY CARD */}
-          {[ 
-            { title: "Sports Physiotherapy", items: sports, color: "from-blue-50 to-white" },
-            { title: "Ortho Physiotherapy", items: ortho, color: "from-purple-50 to-white" },
-            { title: "Neuro Physiotherapy", items: neuro, color: "from-teal-50 to-white" },
+          {[
+            { title: "Sports Physiotherapy", items: sports },
+            { title: "Ortho Physiotherapy", items: ortho },
+            { title: "Neuro Physiotherapy", items: neuro },
           ].map((section, index) => (
             <div
               key={index}
-              className={`
-                rounded-3xl p-10 shadow-xl border border-gray-100
-                bg-gradient-to-br ${section.color}
-                hover:shadow-2xl transition-all duration-300
-              `}
+              className="bg-white rounded-3xl p-10 border border-gray-200 shadow-sm hover:shadow-xl transition-all"
             >
-              {/* TITLE */}
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                {section.title}
-              </h3>
+              {/* Heading with circular icon */}
+              <div className=" items-center  mb-8">
+                <div className="w-12 h-12 mb-3 rounded-full bg-blue-50 flex items-center justify-center">
+                  {iconMap[section.title]}
+                </div>
+                <h3 className="text-2xl font-bold text-primary">
+                  {section.title}
+                </h3>
+              </div>
 
-              {/* LIST */}
               <ul className="space-y-4 text-gray-700">
                 {section.items.map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="text-primary" size={20} />
+                    <CheckCircle size={20} className="text-primary" />
                     <span className="text-[16px] leading-snug">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
           ))}
-
         </div>
       </div>
     </section>

@@ -35,13 +35,13 @@ const specialties = [
 
 const Specialties = () => {
   return (
-    <section className="py-24 px-6 bg-[#F5F7FA]">
+    <section className="py-24 px-6 bg-[#F5F1E8]">
       <div className="max-w-7xl mx-auto">
 
         {/* SECTION HEADER */}
         <div className="mb-14">
           <h2 className="text-4xl font-bold text-gray-900">
-            Our <span className="text-primary">Specialties</span>
+            Our <span className="text-primary text-physio-accent">Specialties</span>
           </h2>
           <p className="text-gray-600 mt-3 max-w-xl">
             We provide advanced physiotherapy treatments tailored to orthopedic,
@@ -54,10 +54,10 @@ const Specialties = () => {
           {specialties.map((item, i) => (
             <div
               key={i}
-              className="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm hover:shadow-md transition-all"
+              className="bg-white rounded-xl p-8 shadow shadow-md hover:scale-110 transition-all"
             >
               {/* ICON */}
-              <div className="mb-5">{item.icon}</div>
+              <div className="mb-5 text-blue-600">{item.icon}</div>
 
               {/* TITLE */}
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -70,7 +70,7 @@ const Specialties = () => {
               </p>
 
               {/* BUTTON */}
-              <button className="flex items-center gap-2 text-primary font-medium hover:underline">
+              <button className="flex items-center gap-2 text-primary font-medium hover:underline ">
                 Learn More <ArrowRight size={18} />
               </button>
             </div>
