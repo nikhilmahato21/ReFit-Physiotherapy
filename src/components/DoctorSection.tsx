@@ -1,4 +1,4 @@
-import { Star, Users, Award } from "lucide-react";
+import { Star,  Award } from "lucide-react";
 
 const DoctorSection = () => {
   return (
