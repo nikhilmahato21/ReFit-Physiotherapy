@@ -12,7 +12,7 @@ const DoctorSection = () => {
           </span>
 
           <h2 className="text-4xl font-bold text-gray-900 leading-snug">
-            Unique Approach To Your <br /> Health Needs
+            Unique Approach To Your <br /> <span className="text-physio-accent">Health Needs</span>
           </h2>
 
           <p className="mt-4 text-gray-600 max-w-lg">

@@ -20,13 +20,13 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-24 px-6 bg-white">
+    <section className="py-24 px-6 bg-[#F5F1E8]">
       <div className="max-w-7xl mx-auto">
 
         {/* HEADER */}
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900">
-            Explore Diverse Health & Wellness <br /> Offerings At Our Clinic
+            Explore Diverse <span className="text-physio-accent">Health & Wellness</span> <br /> Offerings At Our Clinic
           </h2>
         </div>
 
@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
           {features.map((item, i) => (
             <div
               key={i}
-              className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition"
+              className="bg-[#FAF7F2]  rounded-2xl p-8 shadow-sm hover:shadow-md transition"
             >
               <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center mb-5">
                 {item.icon}

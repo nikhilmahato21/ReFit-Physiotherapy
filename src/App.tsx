@@ -4,6 +4,7 @@ import DoctorSection from './components/DoctorSection';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Specialties from './components/Specialties';
+import Testimonials from './components/Testimonials';
 import WhyChooseUs from './components/WhyChooseUs';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Conditions/>
         <DoctorSection/>
         <WhyChooseUs/>
+        <Testimonials/>
         {/* You can add the previous Specialty Section here if desired */}
       </main>
     </div>
