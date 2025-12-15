@@ -69,7 +69,7 @@ export default function Testimonials() {
         <div className="relative">
 
           {/* Glow */}
-          <div className="absolute -inset-4 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 blur-3xl opacity-60 -z-10 rounded-3xl" />
+          <div className="absolute -inset-4 bg-linear-to-r from-blue-100 via-purple-100 to-pink-100 blur-3xl opacity-60 -z-10 rounded-3xl" />
 
           <div
             key={index}
