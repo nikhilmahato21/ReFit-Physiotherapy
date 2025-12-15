@@ -1,4 +1,5 @@
 import { Star,  Award } from "lucide-react";
+import { Smile } from "lucide-react";
 
 const DoctorSection = () => {
   return (
@@ -38,28 +39,35 @@ const DoctorSection = () => {
         <div className="grid grid-cols-2 grid-rows-3 gap-6 h-[400px] ">
   
   {/* LEFT COLUMN: TALL IMAGE (Top - Spans 2 rows) */}
-  <div className="col-start-1 row-start-1 row-span-2 bg-white rounded-3xl overflow-hidden shadow-sm relative">
+  <div className="col-start-1 row-start-1 row-span-2 bg-[#648EC1] rounded-3xl overflow-hidden shadow-sm relative">
     <img
       src="/doctor.jpg"
       alt="Doctor"
-      className="w-full h-full object-cover"
+      className="w-full h-full object-cover "
     />
   </div>
 
   {/* LEFT COLUMN: RATING (Bottom - Spans 1 row) */}
-  <div className="col-start-1 row-start-3 bg-[#EAF4FF] rounded-2xl p-8 flex flex-col justify-center shadow-sm">
+  <div className="col-start-1 row-start-3 bg-[#C9D6F7] rounded-2xl p-8 flex flex-col justify-center shadow-sm">
     <div className="flex items-center gap-2 mb-1">
-      <span className="text-3xl font-bold text-gray-900">4.9</span>
+      <span className="text-3xl font-bold  text-stone-800">4.9</span>
       <Star className="text-yellow-500 fill-yellow-500" size={24} />
     </div>
     <span className="text-gray-600 font-medium">Google Rating</span>
   </div>
 
   {/* RIGHT COLUMN: COUNT (Top - Spans 1 row) */}
-  <div className="col-start-2 row-start-1 bg-[#F3E8FF] rounded-2xl p-8 flex flex-col justify-center shadow-sm">
-    <h3 className="text-4xl font-bold text-gray-900">25K+</h3>
-    <p className="text-gray-600 mt-2 font-medium">Happy Patients</p>
+ <div className="col-start-2 row-start-1 bg-[#F3E8FF] rounded-2xl p-7 flex flex-col justify-center shadow-sm relative">
+  
+  {/* ICON */}
+  <div className="absolute top-5 left-5 w-10 h-10 rounded-full  flex items-center justify-center ">
+    <Smile className="w-5 h-5 text-purple-600" />
   </div>
+
+  <h3 className="text-3xl font-bold text-stone-800 mt-10">25K+</h3>
+  <p className="text-gray-600  font-medium">Happy Patients</p>
+
+</div>
 
   {/* RIGHT COLUMN: TALL IMAGE (Bottom - Spans 2 rows) */}
   <div className="col-start-2 row-start-2 row-span-2 bg-white rounded-3xl overflow-hidden shadow-sm relative">
