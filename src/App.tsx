@@ -80,11 +80,12 @@ function App() {
       {/* Sticky Call Button */}
       <a
         href="tel:+919461203939"
-        className="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-primary text-white px-5 py-3 rounded-full shadow-lg hover:bg-primary/90 transition-all"
+        className="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-blue-600 hover:bg-blue-700
+ text-white px-5 py-3 rounded-full shadow-lg hover:bg-primary/90 transition-all"
       >
         <Phone size={20} />
         <span className="font-semibold hidden sm:inline">
-          +91 94612 03939
+          Call Us
         </span>
       </a>
     </div>
