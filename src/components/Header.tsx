@@ -44,9 +44,10 @@ const Header = () => {
       {/* Mobile Menu Dropdown */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-physio-bg  p-4 flex flex-col gap-4">
-          <a href="#" className="font-medium text-gray-700">Services</a>
-          <a href="#" className="font-medium text-gray-700">Conditions Treated</a>
-          <a href="#" className="font-medium text-gray-700">Service Fees</a>
+          <a href="#service" className="font-medium text-gray-700">Services</a>
+          <a href="#condition" className="font-medium text-gray-700">Conditions Treated</a>
+          <a href="#about" className="font-medium text-gray-700">About Us </a>
+          <a href="#contact" className="font-medium text-gray-700">Contact Us </a>
           <a 
             href={`tel:${phoneNumber}`}
             className="bg-physio-accent text-white text-center py-3 rounded-full font-bold"
