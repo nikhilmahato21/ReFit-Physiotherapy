@@ -24,11 +24,16 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto">
 
         {/* HEADER */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900">
-            Explore Diverse <span className="text-physio-accent">Health & Wellness</span> <br /> Offerings At Our Clinic
-          </h2>
-        </div>
+       <div className="text-center mb-16">
+  <h2 className="text-4xl font-bold text-gray-900">
+    Our <span className="text-physio-accent">Health & Wellness</span> Services
+  </h2>
+
+  <p className="mt-4 text-gray-600 max-w-xl mx-auto leading-relaxed">
+    Personalized physiotherapy solutions designed to restore mobility,
+    relieve pain, and improve overall quality of life.
+  </p>
+</div>
 
         {/* CARDS */}
         <div className="grid md:grid-cols-3 gap-8">
