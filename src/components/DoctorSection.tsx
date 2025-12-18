@@ -3,7 +3,7 @@ import { Smile } from "lucide-react";
 
 const DoctorSection = () => {
   return (
-    <section className="py-24 px-6 bg-[#F7F8FA]">
+    <section id="about" className="py-24 px-6 bg-[#F7F8FA]">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
 
         {/* LEFT CONTENT */}

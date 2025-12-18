@@ -2,15 +2,16 @@ import { CheckCircle, Dumbbell, Bone, Brain } from "lucide-react";
 import type { JSX } from "react";
 
 const sports = [
-  "Heel Pain",
+  "Heel Pain / Ankle Sprain",
   "Knee Injuries",
   "Tennis / Golfer’s Elbow",
-  "Ankle Sprain",
   "Ligament / Tendon Injury",
   "Groin Pain",
-  "Muscular Pain / Strain",
-  "Shin Pain",
+  "Muscular Pain / Strain / Stifness",
   "Shoulder Injury",
+  "ACL",
+  "Calf Pain / Shin Pain",
+  "Wrist pain"
 ];
 
 const ortho = [
@@ -44,7 +45,7 @@ const iconMap: Record<string, JSX.Element> = {
 
 const Conditions = () => {
   return (
-    <section className="py-28 px-6 relative bg-[#F5F7FA]">
+    <section id="condition" className="py-28 px-6 relative bg-[#F5F7FA]">
       <div className="max-w-7xl mx-auto relative z-10">
 
         {/* HEADER */}

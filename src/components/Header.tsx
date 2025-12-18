@@ -12,23 +12,24 @@ const Header = () => {
         {/* Logo Section */}
         <div className="flex items-center gap-2">
           <div className="text-2xl font-bold text-gray-900 flex flex-col leading-none">
-            <span>Re<span className="text-gray-400">Fit</span></span>
+            <span className='text-physio-accent'>Re<span className="text-blue-600">Fit</span></span>
             {/* <span className="text-[0.6rem] text-gray-500 tracking-widest uppercase font-medium">Advance</span> */}
           </div>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">
-          <a href="#" className="hover:text-black transition flex items-center gap-1">
+          <a href="#service" className="hover:text-black transition flex items-center gap-1">
             Services 
           </a>
-          <a href="#" className="hover:text-black transition flex items-center gap-1">
+          <a href="#condition" className="hover:text-black transition flex items-center gap-1">
             Conditions Treated 
           </a>
-          <a href="#" className="hover:text-black transition">Service Fees</a>
-          <a href="#" className="hover:text-black transition flex items-center gap-1">
+         
+          <a href="#about" className="hover:text-black transition flex items-center gap-1">
             About Us 
           </a>
+           <a href="#contact" className="hover:text-black transition">Contact Us</a>
         </nav>
 
         {/* CTA Button */}

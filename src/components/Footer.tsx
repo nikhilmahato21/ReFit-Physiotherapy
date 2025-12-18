@@ -60,7 +60,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-gray-600">
               <li className="flex items-center gap-3">
                 <Phone size={16} />
-                <span>(629) 565-0129</span>
+                <span>+91 94612 03939</span>
               </li>
 
               <li className="flex items-center gap-3">
@@ -68,9 +68,9 @@ export default function Footer() {
                 <span>care@physiocare.com</span>
               </li>
 
-              <li className="flex items-center gap-3">
-                <MapPin size={16} />
-                <span>123 Wellness Street, Health City</span>
+              <li className="flex  gap-3">
+                <MapPin size={16} className="shrink-0" />
+                <span>No. 7, Durga vatika, Brij Mohan Marg, opposite BSNL colony, Vinoba Vihar, Model Town, Jagatpura, Jaipur, Rajasthan 302017</span>
               </li>
             </ul>
           </div>

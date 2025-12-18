@@ -22,7 +22,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-gray-500 text-lg leading-relaxed max-w-md">
-              Our Clinic provides sports physiotherapy, orthopedic rehabilitation, motor coordination solutions, and musculoskeletal conditions care.
+              Our Clinic provides sports physiotherapy, orthopedic rehabilitation, Neuro Rehab. , and musculoskeletal conditions care.
             </p>
 
             {/* Search/Call Bar inspired by design */}

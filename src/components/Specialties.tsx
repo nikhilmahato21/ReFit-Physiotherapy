@@ -3,24 +3,24 @@ import { ArrowRight, Stethoscope, Activity, Bone, Brain } from "lucide-react";
 const specialties = [
   {
     title: "Sports Physiotherapy",
-    desc: "Treatment for sprains, tears, ligament injuries, muscle strains, and performance rehab.",
+    desc: "Treatment for sprains, strain, ligament injuries, muscle strains, and sports related injuries.",
     icon: <Activity size={30} className="text-primary" />,
   },
   {
-    title: "Joint Pain & Ortho Care",
-    desc: "Relief for shoulder, knee, hip, and spine pain with advanced orthopedic physiotherapy.",
+    title: "Orthopedic Physiotherapy",
+    desc: "Lower back pain,Neck pain,Knee pain ,Heel pain, Frozen shoulder,rotatory cuff tear,spine pain and Tennis elbow with advanced orthopedic physiotherapy.",
     icon: <Bone size={30} className="text-primary" />,
   },
   {
-    title: "Neuro Physiotherapy",
-    desc: "Rehabilitation for paralysis, stroke, facial palsy, vertigo, Parkinson’s and nerve damage.",
+    title: "Neuropathy Physiotherapy",
+    desc: "Rehabilitation for paralysis, stroke, facial palsy, vertigo, Parkinson’s,Numbness,Tingling and pain usaully in hands and feet",
     icon: <Brain size={30} className="text-primary" />,
   },
   {
-    title: "Slip Disc & Back Pain",
-    desc: "Targeted spinal therapy for disc bulge, nerve compression and chronic low back pain.",
-    icon: <Stethoscope size={30} className="text-primary" />,
-  },
+  title: "After Surgery Physiotherapy",
+  desc: "Post-surgical rehabilitation to restore strength, mobility, and function after orthopedic and neurological surgeries.",
+  icon: <Stethoscope size={30} className="text-primary" />,
+},
   {
     title: "Sciatica & Spondylitis",
     desc: "Pain management and posture correction for radiating leg pain and spine stiffness.",
@@ -35,7 +35,7 @@ const specialties = [
 
 const Specialties = () => {
   return (
-    <section className="py-24 px-6 bg-[#F5F1E8]">
+    <section id="service" className="py-24 px-6 bg-[#F5F1E8]">
       <div className="max-w-7xl mx-auto">
 
         {/* SECTION HEADER */}

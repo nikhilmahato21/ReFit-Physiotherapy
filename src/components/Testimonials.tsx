@@ -1,24 +1,25 @@
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { User } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Mehwish",
+    name: "monika gehani",
     role: "Patient",
     image: "https://placehold.co/400",
-    text: "Compliment interested discretion estimating on stimulated apartments oh."
+    text: "REFIT Advanced Physiotherapy & Sports Injury Care is truly exceptional! Their customer service is top-notch, ensuring every client feels valued and understood. "
   },
   {
-    name: "Elizabeth Jeff",
+    name: "Sandeep",
     role: "Patient",
     image: "https://placehold.co/400",
-    text: "Dear so sing when in find read of call. As distrusts behaviour abilities defective is."
+    text: "Best physiotherapy treatment for back pain relief also have advanced equipment...Peaceful atmosphere and supportive staff also..good feeling after pain relief...thanks to Dr rajeev and whole team.."
   },
   {
-    name: "Emily Thomas",
+    name: "Sarvesh",
     role: "Patient",
     image: "https://placehold.co/400",
-    text: "Never at water me might. On formed merits hunted unable morally by mr whence."
+    text: "All facilities are good and Dr Rajeev behavior very nice its important to a patient, Dr behavior should be friendly/ care taker ... I'm satisfied with his facilities n knowledge of work."
   }
 ];
 
@@ -102,20 +103,19 @@ export default function Testimonials() {
 
             {/* USER */}
             <div className="flex items-center gap-4 pt-6 border-t border-gray-100 w-full justify-center">
-              <img
-                src={t.image}
-                alt={t.name}
-                className="w-12 h-12 rounded-full object-cover shrink-0 ring-2 ring-blue-100"
-              />
-              <div className="text-left">
-                <h4 className="font-semibold text-blue-600 leading-tight">
-                  {t.name}
-                </h4>
-                <p className="text-sm text-gray-500">
-                  {t.role}
-                </p>
-              </div>
-            </div>
+  <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 ring-2 ring-blue-100 bg-blue-50">
+    <User size={22} className="text-blue-600" />
+  </div>
+
+  <div className="text-left">
+    <h4 className="font-semibold text-blue-600 leading-tight">
+      {t.name}
+    </h4>
+    <p className="text-sm text-gray-500">
+      {t.role}
+    </p>
+  </div>
+</div>
           </div>
 
           {/* ARROWS */}

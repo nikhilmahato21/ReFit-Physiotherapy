@@ -2,7 +2,7 @@ import { Phone } from "lucide-react";
 
 export default function CTASection() {
   return (
-    <section className="py-20 px-6 bg-[#F5F7FA]">
+    <section id="contact" className="py-20 px-6 bg-[#F5F7FA]">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-6">
 
         {/* LEFT CARD */}
@@ -26,11 +26,11 @@ export default function CTASection() {
 
           {/* ILLUSTRATION (SUBTLE) */}
           <div className="absolute right-6 bottom-6 opacity-20">
-            <img
+            {/* <img
               src="/doctor-outline.svg"
               alt=""
               className="w-28 h-28"
-            />
+            /> */}
           </div>
         </div>
 
@@ -53,17 +53,17 @@ export default function CTASection() {
               <Phone size={20} className="text-gray-900" />
             </div>
             <span className="text-xl font-semibold text-gray-900 tracking-wide">
-              (629) 565-0129
+             +91 94612 03939
             </span>
           </div>
 
           {/* ILLUSTRATION */}
           <div className="absolute right-6 bottom-6 opacity-20">
-            <img
+            {/* <img
               src="/doctor-outline.svg"
               alt=""
               className="w-28 h-28"
-            />
+            /> */}
           </div>
         </div>
 
