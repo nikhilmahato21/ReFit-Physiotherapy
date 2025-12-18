@@ -55,13 +55,13 @@ const Hero = () => {
               {/* 1. Tall Main Image (Left side of right col) */}
               <div className="relative rounded-4xl overflow-hidden md:row-span-2 group">
                 <img 
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop" 
+                  src="https://images.pexels.com/photos/5793918/pexels-photo-5793918.jpeg" 
                   alt="Physiotherapy Treatment" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute bottom-6 left-4 right-4">
                   <div className="bg-black/30 backdrop-blur-md text-white p-4 rounded-full border border-white/20">
-                    <p className="font-medium">Pelvic floor & Neuro physiotherapy</p>
+                    <p className="font-medium text-center">Sciatica & Spondylitis</p>
                   </div>
                 </div>
               </div>
@@ -118,7 +118,7 @@ const Hero = () => {
               {/* 3. Bottom Right: Small Image */}
               <div className="relative rounded-4xl overflow-hidden group">
                 <img 
-                  src="https://images.unsplash.com/photo-1597452485669-2c7bb5fef90d?q=80&w=2069&auto=format&fit=crop" 
+                  src="https://images.pexels.com/photos/8219055/pexels-photo-8219055.jpeg" 
                   alt="Rehabilitation" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
