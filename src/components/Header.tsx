@@ -6,16 +6,17 @@ const Header = () => {
   const phoneNumber = "+919461203939"; // Replace with actual number
 
   return (
-    <header className="bg-physio-bg backdrop-blur-md sticky top-0 z-50 py-4 ">
+    <header className="bg-[#F5F7FA] backdrop-blur-md sticky top-0 z-50 py-4 ">
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
         
         {/* Logo Section */}
         <div className="flex items-center gap-2">
-          <div className="text-2xl font-bold text-gray-900 flex flex-col leading-none">
-            <span className='text-physio-accent'>Re<span className="text-blue-600">Fit</span></span>
-            {/* <span className="text-[0.6rem] text-gray-500 tracking-widest uppercase font-medium">Advance</span> */}
-          </div>
-        </div>
+  <img
+    src="/logo1.png"   // put your logo inside public folder
+    alt="ReFit Logo"
+    className="h-12 md:h-14 object-contain"
+  />
+</div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">

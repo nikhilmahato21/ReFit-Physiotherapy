@@ -23,12 +23,12 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1, duration: 0.7, ease: "easeOut" }}
             >
-              <span className="text-gray-400">Personalized </span><br />
+              <span className="text-gray-400">Specialized</span><br />
               <span className="relative inline-block font-bold">
                 Physiotherapy
               </span>{" "}
               for <br />
-              Specialized Care
+              Recovery Care
             </motion.h1>
 
             {/* Paragraph */}
@@ -62,7 +62,7 @@ const Hero = () => {
 
             {/* Badge */}
             <motion.div
-              className="flex items-center gap-4 mt-8 bg-white p-3 rounded-2xl w-fit shadow-sm border border-gray-100"
+              className="flex items-center gap-3 mt-8 bg-white p-3 rounded-2xl w-fit shadow-sm border border-gray-100"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
@@ -84,7 +84,7 @@ const Hero = () => {
               </div>
               <div>
                 <p className="font-bold text-gray-900 text-sm">
-                  In sync with you
+                  Aligned With Your Recovery
                 </p>
                 <p className="text-xs text-gray-500">
                   We adapt to your recovery pace.
@@ -105,14 +105,14 @@ const Hero = () => {
               {/* Tall Image */}
               <div className="relative rounded-4xl overflow-hidden md:row-span-2 group will-change-transform">
                 <img
-                  src="https://images.pexels.com/photos/5793918/pexels-photo-5793918.jpeg"
+                  src="https://res.cloudinary.com/dynbpb9u0/image/upload/v1766389032/Gemini_Generated_Image_1ina9e1ina9e1ina_bg0ds3.png"
                   alt="Physiotherapy Treatment"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute bottom-6 left-4 right-4">
                   <div className="bg-black/30 backdrop-blur-md text-white p-4 rounded-full border border-white/20">
                     <p className="font-medium text-center">
-                      Sciatica & Spondylitis
+                      Pain Management
                     </p>
                   </div>
                 </div>
@@ -185,7 +185,7 @@ const Hero = () => {
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="bg-black/30 backdrop-blur-md text-white p-3 rounded-full border border-white/20 text-center">
                     <p className="font-medium text-sm">
-                      Rehabilitation Action
+                      Kinesiology taping
                     </p>
                   </div>
                 </div>

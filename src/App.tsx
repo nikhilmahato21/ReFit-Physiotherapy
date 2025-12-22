@@ -1,4 +1,5 @@
 
+import BookAppointment from './components/BookAppointment';
 import Conditions from './components/Conditions';
 import CTASection from './components/CTASection';
 import DoctorSection from './components/DoctorSection';
@@ -73,6 +74,7 @@ function App() {
         >
           <CTASection />
         </motion.section>
+        <BookAppointment/>
 
         <Footer />
       </main>
