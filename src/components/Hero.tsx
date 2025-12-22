@@ -1,7 +1,7 @@
 import { motion } from "motion/react"
 
 const Hero = () => {
-  const phoneNumber = "+919876543210";
+  const phoneNumber = "+919461203939";
 
   return (
     <section className="relative bg-physio-bg pt-8 pb-0 overflow-hidden">
