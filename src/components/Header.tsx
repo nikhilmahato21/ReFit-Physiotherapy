@@ -6,7 +6,7 @@ const Header = () => {
   const phoneNumber = "+919461203939"; // Replace with actual number
 
   return (
-    <header className="bg-[#F5F7FA] backdrop-blur-md sticky top-0 z-50 py-4 ">
+    <header className="bg-physio-bg backdrop-blur-md sticky top-0 z-50 py-4 ">
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
         
         {/* Logo Section */}
@@ -44,7 +44,7 @@ const Header = () => {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-[#F5F7FA]  p-4 flex flex-col gap-4">
+        <div className="md:hidden absolute top-full left-0 w-full bg-physio-bg  p-4 flex flex-col gap-4">
           <a href="#service" className="font-medium text-gray-700">Services</a>
           <a href="#condition" className="font-medium text-gray-700">Conditions Treated</a>
           <a href="#about" className="font-medium text-gray-700">About Us </a>

@@ -6,6 +6,7 @@ import DoctorSection from './components/DoctorSection';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import PhysioBentoGrid from './components/Services';
 import Specialties from './components/Specialties';
 import Testimonials from './components/Testimonials';
 import WhyChooseUs from './components/WhyChooseUs';
@@ -29,6 +30,8 @@ function App() {
         >
           <Specialties />
         </motion.section>
+
+        <PhysioBentoGrid />
 
         <motion.section
           initial={{ opacity: 0, y: 40 }}
