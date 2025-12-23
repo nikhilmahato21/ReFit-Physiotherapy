@@ -24,11 +24,11 @@ const BookAppointment = () => {
             </h3>
 
             <ul className="space-y-4 text-gray-600">
-              <li>✔️ Your current marketing challenges</li>
-              <li>✔️ Growth opportunities for your business</li>
-              <li>✔️ SEO, Ads & content strategy</li>
-              <li>✔️ Clear next steps</li>
-            </ul>
+  <li>✔️ Injury evaluation & biomechanical analysis</li>
+  <li>✔️ Pain management and performance limitations</li>
+  <li>✔️ Sports-specific rehabilitation planning</li>
+  <li>✔️ Return-to-activity roadmap</li>
+</ul>
 
             <div className="pt-4">
               <p className="text-sm text-gray-500">
