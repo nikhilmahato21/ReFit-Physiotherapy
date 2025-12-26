@@ -40,7 +40,7 @@ const Specialties = () => {
 
         {/* SECTION HEADER */}
         <div className="mb-14 text-center">
-  <h2 className="text-4xl font-bold text-gray-900">
+  <h2 className="text-4xl md:text-5xl  font-bold text-gray-900">
     Our <span className="text-physio-accent">Services</span>
   </h2>
 

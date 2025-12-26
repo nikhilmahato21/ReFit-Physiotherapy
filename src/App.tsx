@@ -12,6 +12,7 @@ import Testimonials from './components/Testimonials';
 import WhyChooseUs from './components/WhyChooseUs';
 import { Phone } from "lucide-react";
 import { motion } from "motion/react"
+import TrustedSection from './components/TrustedSection';
 
 
 function App() {
@@ -60,6 +61,8 @@ function App() {
           <WhyChooseUs />
         </motion.section>
 
+
+{/* <TrustedSection/> */}
         <motion.section
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}

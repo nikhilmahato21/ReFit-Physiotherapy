@@ -11,7 +11,7 @@ const services = [
   },
   {
     title: "Sports Injury Rehab",
-    image: "/sports.jpg",
+    image: "https://cdn.prod.website-files.com/679bf58f5c11fdc132846a32/679bf58f5c11fdc132846a98_pexels-olly-3760275.jpg",
     className: "col-span-12 md:col-span-3 lg:col-span-4 lg:row-span-2",
   },
   {
@@ -31,7 +31,7 @@ const services = [
   },
   {
     title: "Osteo & Chiro-manipulation",
-    image: "/manipulate.jpg",
+    image: "https://s2.aptocdn.com/betterhealthalaska.com/wp-content/uploads/2022/01/rsz_chiropractor-secrets1.webp",
     className: "col-span-12 md:col-span-3 lg:col-span-4",
   },
 ];
@@ -47,7 +47,7 @@ const PhysioBentoGrid = () => {
 
         {/* Header */}
         <div className="mb-12 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <h2 className="text-4xl md:text-5xl  font-bold text-gray-900">
             Our <span className="text-physio-accent">Specialized </span>Treatments
           </h2>
           <p className="text-gray-600 mt-3 max-w-lg mx-auto text-sm md:text-base">
@@ -59,8 +59,8 @@ const PhysioBentoGrid = () => {
         <div className="
           grid
           grid-cols-12
-          auto-rows-[180px]
-          md:auto-rows-[200px]
+          auto-rows-[200px]
+          md:auto-rows-[280px]
           gap-5
         ">
           {services.map((service, index) => (
@@ -79,18 +79,19 @@ const PhysioBentoGrid = () => {
               <div className="absolute inset-0 bg-black/45" />
 
               {/* Label */}
-              <div className="absolute bottom-3 left-3 right-3">
-                <div className="bg-black/40 backdrop-blur-sm rounded-full px-4 py-2">
-                  <h3 className="text-white text-sm md:text-base font-semibold text-center">
-                    {service.title}
-                  </h3>
-                </div>
-              </div>
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2">
+  <div className="bg-black/40 backdrop-blur-sm rounded-full px-4 py-2 inline-flex">
+    <h3 className="text-white text-sm md:text-md font-semibold whitespace-nowrap">
+      {service.title}
+    </h3>
+  </div>
+</div>
             </div>
           ))}
         </div>
 
       </div>
+      
     </section>
   );
 };

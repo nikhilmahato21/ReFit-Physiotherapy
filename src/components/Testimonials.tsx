@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { User } from "lucide-react"
+import ImageGallery from "./ImageGallery";
 
 const testimonials = [
   {
@@ -49,11 +50,12 @@ export default function Testimonials() {
 
   return (
     <section className="py-24 px-6 bg-[#F5F7FA]">
+      <ImageGallery/>
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
 
         {/* LEFT CONTENT */}
         <div className="space-y-5">
-          <h2 className="text-4xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
             What Our{" "}
             <span className="text-primary text-physio-accent">
               Patients
@@ -76,11 +78,10 @@ export default function Testimonials() {
             key={index}
             className="
               relative
-              bg-white/90
-              backdrop-blur
+              bg-blue-100
               rounded-2xl
-              border border-white/60
-              shadow-[0_20px_40px_rgba(0,0,0,0.08)]
+              
+              
               p-8
               h-[260px]
               flex flex-col
@@ -88,7 +89,7 @@ export default function Testimonials() {
               items-center
               transition-all
               duration-500
-              hover:shadow-[0_30px_60px_rgba(0,0,0,0.12)]
+              
               hover:-translate-y-1
               animate-fade-in
             "
@@ -102,7 +103,7 @@ export default function Testimonials() {
             </p>
 
             {/* USER */}
-            <div className="flex items-center gap-4 pt-6 border-t border-gray-100 w-full justify-center">
+            <div className="flex items-center gap-4 pt-6 border-t border-blue-200 w-full justify-center">
   <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 ring-2 ring-blue-100 bg-blue-50">
     <User size={22} className="text-blue-600" />
   </div>

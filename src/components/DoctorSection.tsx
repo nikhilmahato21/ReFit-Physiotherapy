@@ -1,39 +1,45 @@
 import { Star,  Award } from "lucide-react";
 import { Smile } from "lucide-react";
+import { AwardsSlider } from "./AwardsSlider";
 
 const DoctorSection = () => {
   return (
     <section id="about" className="py-24 px-6 bg-[#F7F8FA]">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center justify-center">
 
         {/* LEFT CONTENT */}
-        <div>
-          <span className="inline-block mb-4 px-4 py-1 text-sm font-medium bg-yellow-100 text-yellow-800 rounded-full">
-            Trusted Physiotherapy Care
-          </span>
+        <div className="text-center flex flex-col items-center">
+  {/* BADGE */}
+  <span className="inline-block mb-4 px-4 py-1 text-sm font-medium bg-yellow-100 text-yellow-800 rounded-full">
+    Trusted Physiotherapy Care
+  </span>
 
-          <h2 className="text-4xl font-bold text-gray-900 leading-snug">
-            Unique Approach To Your <br /> <span className="text-physio-accent">Health Needs</span>
-          </h2>
+  {/* HEADING */}
+  <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-snug">
+    Unique Approach To Your <br />
+    <span className="text-physio-accent">Health Needs</span>
+  </h2>
 
-          <p className="mt-4 text-gray-600 max-w-lg">
-            Personalized physiotherapy programs designed to restore mobility,
-            relieve pain, and improve quality of life through expert care.
-          </p>
+  {/* PARAGRAPH */}
+  <p className="mt-4 text-gray-600 max-w-lg mx-auto">
+    Personalized physiotherapy programs designed to restore mobility,
+    relieve pain, and improve quality of life through expert care.
+  </p>
 
-          {/* SMALL CARD */}
-          <div className="mt-8 bg-[#EAF4EC] rounded-2xl p-6 flex gap-4 items-start max-w-md">
-            <Award className="text-green-600 mt-1" />
-            <div>
-              <h4 className="font-semibold text-gray-900">
-                Expert Led Treatment
-              </h4>
-              <p className="text-sm text-gray-600 mt-1">
-                Treatments supervised by Dr. Rajeev Khinchi (PhD, MPT, BPT)
-              </p>
-            </div>
-          </div>
-        </div>
+  {/* SMALL CARD */}
+  <div className="mt-8 bg-[#EAF4EC] rounded-2xl p-6 flex flex-col items-center text-center max-w-md">
+    <Award className="text-green-600 mb-3" />
+
+    <h4 className="font-semibold text-gray-900">
+      Expert Led Treatment
+    </h4>
+
+    <p className="text-sm text-gray-600 mt-1">
+      Treatments supervised by Dr. Rajeev Khinchi (PhD, MPT, BPT)
+    </p>
+  </div>
+</div>
+
 
         {/* RIGHT CARDS */}
         <div className="grid grid-cols-2 grid-rows-3 gap-6 h-[400px] ">
@@ -82,6 +88,19 @@ const DoctorSection = () => {
 
 
       </div>
+      {/* AWARDS & ACHIEVEMENTS */}
+<div className="mt-28 text-center ">
+  <h3 className="text-center text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+    Awards & Recognitions
+  </h3>
+
+  <p className="text-center text-gray-600 max-w-xl mx-auto mb-10">
+    Honored for excellence in physiotherapy, research, and patient care.
+  </p>
+
+  <AwardsSlider />
+</div>
+
     </section>
   );
 };

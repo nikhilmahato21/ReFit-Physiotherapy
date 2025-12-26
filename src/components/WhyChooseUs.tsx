@@ -2,21 +2,22 @@ import { HeartPulse, Stethoscope, Activity } from "lucide-react";
 
 const features = [
   {
-    title: "Lab Tests & Diagnosis",
-    desc: "Accurate assessment and movement analysis for correct treatment planning.",
+    title: "Personalized, Holistic Care",
+    desc: "Tailored treatment plans designed around your condition, goals, and lifestyle.",
+    icon: <HeartPulse className="text-green-600" />,
+  },
+  {
+    title: "Advanced Treatment Methods",
+    desc: "Modern physiotherapy techniques backed by evidence-based clinical practices.",
     icon: <Stethoscope className="text-purple-600" />,
   },
   {
-    title: "Teleconsultation",
-    desc: "Remote physiotherapy guidance and follow-ups from the comfort of your home.",
+    title: "Dedicated to Your Recovery",
+    desc: "Focused care and continuous support to help you recover faster and stronger.",
     icon: <Activity className="text-blue-600" />,
   },
-  {
-    title: "Physical Rehabilitation",
-    desc: "Complete recovery programs for injury, surgery, and neurological conditions.",
-    icon: <HeartPulse className="text-green-600" />,
-  },
 ];
+
 
 const WhyChooseUs = () => {
   return (
@@ -25,9 +26,9 @@ const WhyChooseUs = () => {
 
         {/* HEADER */}
        <div className="text-center mb-16">
-  <h2 className="text-4xl font-bold text-gray-900">
-    Our <span className="text-physio-accent">Health & Wellness</span> Services
-  </h2>
+  <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+  Why Patients <span className="text-physio-accent">Trust Us</span>
+</h2>
 
   <p className="mt-4 text-gray-600 max-w-xl mx-auto leading-relaxed">
     Personalized physiotherapy solutions designed to restore mobility,

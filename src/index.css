@@ -26,6 +26,49 @@
   animation: fade-in 0.5s ease-out;
 }
 
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Default (Desktop) */
+.awards-track {
+  --marquee-speed: 35s;
+  display: flex;
+  width: 200%;
+  animation: marquee var(--marquee-speed) linear infinite;
+}
+
+.awards-track:hover {
+  animation-play-state: paused;
+}
+
+.award-item {
+  width: 220px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .awards-track {
+    --marquee-speed: 35s;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .awards-track {
+    --marquee-speed: 15s;
+  }
+}
+
 
 
 html { scroll-behavior: smooth; }
