@@ -11,8 +11,8 @@ export const AwardsSlider = () => {
     <div className="relative overflow-hidden w-full mt-24">
 
       {/* Fade edges */}
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#F7F8FA] to-transparent z-10" />
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[#F7F8FA] to-transparent z-10" />
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-linear-to-r from-[#F7F8FA] to-transparent z-10" />
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-linear-to-l from-[#F7F8FA] to-transparent z-10" />
 
       {/* TRACK */}
       <div className="awards-track">

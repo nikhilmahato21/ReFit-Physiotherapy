@@ -12,7 +12,7 @@ import Testimonials from './components/Testimonials';
 import WhyChooseUs from './components/WhyChooseUs';
 import { Phone } from "lucide-react";
 import { motion } from "motion/react"
-import TrustedSection from './components/TrustedSection';
+
 
 
 function App() {

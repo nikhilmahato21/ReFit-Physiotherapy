@@ -1,5 +1,5 @@
 import React from 'react';
-import { galleryImages } from '../data/data';
+
 import ImageGallery from './ImageGallery';
 
 
