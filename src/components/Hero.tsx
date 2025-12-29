@@ -1,7 +1,7 @@
 import { motion } from "motion/react"
 
 const Hero = () => {
-  const phoneNumber = "+919461203939";
+  
 
   return (
     <section className="relative bg-physio-bg pt-8 pb-0 overflow-hidden">
@@ -18,7 +18,7 @@ const Hero = () => {
   transition={{ duration: 0.8, ease: "easeOut" }}
 >
   {/* OUTER CONTAINER */}
-  <div className="relative w-full h-full rounded-[32px] overflow-hidden">
+  <div className="relative w-full h-full rounded-4xl overflow-hidden">
 
     {/* BLURRED BACKGROUND IMAGE */}
     <img
