@@ -1,6 +1,6 @@
 const BookAppointment = () => {
   return (
-    <section className="py-24 bg-[#F5F1E8]">
+    <section id="book" className="py-24 bg-[#F5F1E8]">
       <div className="max-w-6xl mx-auto px-6">
         
         {/* HEADER */}

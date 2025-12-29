@@ -20,7 +20,7 @@ const ortho = [
   "Slip Disc",
   "Osteoarthritis",
   "Joint Pain",
-  "Varicose Veins Pain",
+  "Varicose Veins ",
   "Stiffness After Fracture",
   "Joint Replacement Rehab",
 ];

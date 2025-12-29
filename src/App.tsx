@@ -22,7 +22,7 @@ function App() {
 
       <main>
         <Hero />
-
+<WhyChooseUs />
         <motion.section
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -58,7 +58,7 @@ function App() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <WhyChooseUs />
+          
         </motion.section>
 
 

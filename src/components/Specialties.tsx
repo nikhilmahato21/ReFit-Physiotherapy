@@ -12,12 +12,12 @@ const specialties = [
     icon: <Bone size={30} className="text-primary" />,
   },
   {
-    title: "Neuropathy Physiotherapy",
+    title: "Neuro Physiotherapy",
     desc: "Rehabilitation for paralysis, stroke, facial palsy, vertigo, Parkinson’s,Numbness,Tingling and pain usaully in hands and feet",
     icon: <Brain size={30} className="text-primary" />,
   },
   {
-  title: "After Surgery Physiotherapy",
+  title: "Physiotherapy After Surgery ",
   desc: "Post-surgical rehabilitation to restore strength, mobility, and function after orthopedic and neurological surgeries.",
   icon: <Stethoscope size={30} className="text-primary" />,
 },
@@ -27,7 +27,7 @@ const specialties = [
     icon: <Activity size={30} className="text-primary" />,
   },
   {
-    title: "Post-Surgery Rehab",
+    title: "Post-fracture Rehab",
     desc: "Recovery programs for fracture, joint replacement, ligament repair, and mobility restoration.",
     icon: <Bone size={30} className="text-primary" />,
   },

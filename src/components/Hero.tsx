@@ -10,88 +10,100 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
           {/* LEFT COLUMN */}
-          <motion.div
-            className="lg:col-span-5 space-y-8"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            {/* Heading */}
-            <motion.h1
-              className="text-4xl md:text-6xl font-sans font-normal text-gray-900 leading-[1.1]"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1, duration: 0.7, ease: "easeOut" }}
-            >
-              <span className="text-gray-400">Specialized</span><br />
-              <span className="relative inline-block font-bold">
-                Physiotherapy
-              </span>{" "}
-              for <br />
-              Recovery Care
-            </motion.h1>
+        
+<motion.div
+  className="lg:col-span-5 h-full min-h-[500px] flex items-center justify-center relative"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
+  {/* OUTER CONTAINER */}
+  <div className="relative w-full h-full rounded-[32px] overflow-hidden">
 
-            {/* Paragraph */}
-            <motion.p
-              className="text-gray-500 text-lg leading-relaxed max-w-md"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.7, ease: "easeOut" }}
-            >
-              Our Clinic provides sports physiotherapy, orthopedic rehabilitation,
-              Neuro Rehab., and musculoskeletal conditions care.
-            </motion.p>
+    {/* BLURRED BACKGROUND IMAGE */}
+    <img
+      src="https://res.cloudinary.com/dynbpb9u0/image/upload/v1767005465/bghos_fddg93.jpg"  // 👈 background image
+      alt=""
+      className="
+        absolute inset-0 w-full h-full
+        object-cover blur-sm scale-110
+      "
+    />
 
-            {/* Call Bar */}
-            <motion.div
-              className="bg-white p-2 rounded-full shadow-sm border border-gray-200 flex items-center justify-between max-w-md"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.35, duration: 0.6, ease: "easeOut" }}
-            >
-              <span className="pl-6 text-gray-400 font-medium">
-                Need immediate help?
-              </span>
-              <a
-                href={`tel:${phoneNumber}`}
-                className="bg-physio-accent text-white px-8 py-3 rounded-full font-bold hover:bg-orange-600 transition"
-              >
-                Call Now
-              </a>
-            </motion.div>
+    {/* DARK OVERLAY */}
+    <div className="absolute inset-0 bg-black/35" />
 
-            {/* Badge */}
-            <motion.div
-              className="flex items-center gap-3 mt-8 bg-white p-3 rounded-2xl w-fit shadow-sm border border-gray-100"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
-            >
-              <div className="bg-blue-600 p-2 rounded-xl text-white">
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p className="font-bold text-gray-900 text-sm">
-                  Aligned With Your Recovery
-                </p>
-                <p className="text-xs text-gray-500">
-                  We adapt to your recovery pace.
-                </p>
-              </div>
-            </motion.div>
-          </motion.div>
+    {/* INNER BORDER */}
+    <div className="absolute inset-3.5 rounded-[26px] border border-white/20 z-10" />
+
+    {/* DOCTOR IMAGE */}
+    <img
+      src="/doc.png"  // 👈 doctor PNG
+      alt="Consultant Physiotherapist"
+      className="
+        absolute bottom-0 left-1/2 -translate-x-1/2
+        h-[90%] object-contain z-20
+      "
+    />
+
+    {/* FLOATING DOCTOR CARD */}
+    <div
+      className="
+        absolute right-2 top-9/12 -translate-y-1/2 z-30
+        bg-white rounded-2xl shadow-lg
+        px-4 py-3 w-60
+        border border-gray-100
+      "
+    >
+      
+      <p className="text-sm font-semibold text-gray-900 leading-tight">
+        Dr. Rajeev Khinchi
+      </p>
+      <p className="text-xs text-gray-500 mt-0.5">
+        PhD, MPT (Sports), BPT, Dip. in Yoga & Nutritian, Certified in Sports Medicine (SMS),
+      </p>
+    </div>
+
+    {/* SOCIAL ICONS */}
+    {/* BOOK APPOINTMENT PILL */}
+<a
+ href="#book"
+  className="
+    absolute left-2 top-7/12 -translate-y-1/2 z-30
+    group
+  "
+>
+  <div className="relative">
+    {/* Ping Effect */}
+    <span className="absolute inset-0 rounded-full bg-blue-600/40 "></span>
+
+    {/* Pill */}
+    <div
+      className="
+        relative flex items-center gap-3
+        px-5 py-3
+        bg-white/95 backdrop-blur-md
+        rounded-full shadow-lg
+        border border-gray-200
+        hover:scale-105 transition-transform
+      "
+    >
+      {/* Dot */}
+      <span className="w-3 h-3 rounded-full bg-blue-600"></span>
+
+      {/* Text */}
+      <span className="text-xs font-semibold text-gray-900 whitespace-nowrap">
+        Book Appointment
+      </span>
+    </div>
+  </div>
+</a>
+
+  </div>
+</motion.div>
+
+
+
 
           {/* RIGHT COLUMN */}
           <motion.div
@@ -105,9 +117,9 @@ const Hero = () => {
               {/* Tall Image */}
               <div className="relative rounded-4xl overflow-hidden md:row-span-2 group will-change-transform">
                 <img
-                  src="https://res.cloudinary.com/dynbpb9u0/image/upload/v1766389032/Gemini_Generated_Image_1ina9e1ina9e1ina_bg0ds3.png"
+                  src="https://res.cloudinary.com/dynbpb9u0/image/upload/v1767006598/WhatsApp_Image_2025-12-29_at_16.39.35_cdwlqs.jpg"
                   alt="Physiotherapy Treatment"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover object-right transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute bottom-6 left-4 right-4">
                   <div className="bg-black/30 backdrop-blur-md text-white p-4 rounded-full border border-white/20">
@@ -178,14 +190,14 @@ const Hero = () => {
               {/* Small Image */}
               <div className="relative rounded-4xl overflow-hidden group will-change-transform">
                 <img
-                  src="https://images.pexels.com/photos/8219055/pexels-photo-8219055.jpeg"
+                  src="https://res.cloudinary.com/dynbpb9u0/image/upload/v1767006822/WhatsApp_Image_2025-12-29_at_16.43.14_s005nl.jpg"
                   alt="Rehabilitation"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="bg-black/30 backdrop-blur-md text-white p-3 rounded-full border border-white/20 text-center">
                     <p className="font-medium text-sm">
-                      Kinesiology taping
+                      mobility / strength training
                     </p>
                   </div>
                 </div>
