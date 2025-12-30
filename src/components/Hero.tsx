@@ -70,7 +70,7 @@ const Hero = () => {
 
   {/* DETAILS */}
   <p className="text-xs md:text-base font-bold text-white/70 mt-1 leading-snug">
-    Dip. in Yoga & Nutrition • Certified in Sports Medicine (SMS)
+    Dip. in Yoga & Nutrition <br className="hidden md:block" /> Certified in Sports Medicine (SMS)
     <br className="hidden md:block" />
     Ex.- Moniek Hospital, Jaipur
   </p>

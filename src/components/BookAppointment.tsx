@@ -39,7 +39,7 @@ const BookAppointment = () => {
           </div>
 
           {/* RIGHT: GOOGLE CALENDAR EMBED */}
-          <div className="rounded-2xl overflow-hidden border border-gray-200">
+          <div className="rounded-2xl overflow-x-auto border border-gray-200">
          <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ31WsfTVpimU1XtbQL8c1SB0MvZrh6HjrRYZjv3M9hxT9QAg21pTyoY1VPpqCqYY3iP5qY62zOQ?gv=true"  width="100%" height="400" ></iframe>
           </div>
 
