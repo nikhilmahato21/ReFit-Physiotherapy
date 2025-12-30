@@ -10,7 +10,8 @@ import PhysioBentoGrid from './components/Services';
 import Specialties from './components/Specialties';
 import Testimonials from './components/Testimonials';
 import WhyChooseUs from './components/WhyChooseUs';
-import { Phone } from "lucide-react";
+import { Phone} from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "motion/react"
 
 
@@ -86,16 +87,46 @@ function App() {
       </main>
 
       {/* Sticky Call Button */}
-      <a
-        href="tel:+919461203939"
-        className="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-blue-600 hover:bg-blue-700
- text-white px-5 py-3 rounded-full shadow-lg hover:bg-primary/90 transition-all"
-      >
-        <Phone size={20} />
-        <span className="font-semibold hidden sm:inline">
-          Call Us
-        </span>
-      </a>
+     {/* Floating Action Buttons */}
+<div className="fixed bottom-6 right-6 z-50 flex flex-col items-center gap-7">
+
+  {/* WhatsApp Button */}
+  <a
+    href="https://wa.me/919461203939"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center
+      w-14 h-14 rounded-full
+      bg-green-500 hover:bg-green-600
+      text-white shadow-lg
+      transition-transform hover:scale-105"
+    aria-label="WhatsApp"
+  >
+      <FaWhatsapp size={26} />
+  </a>
+
+  {/* Call Button with Ping Animation */}
+  <a
+    href="tel:+919461203939"
+    className="relative flex items-center justify-center
+      w-14 h-14 rounded-full
+      bg-blue-600 hover:bg-blue-700
+      text-white shadow-xl
+      transition-transform hover:scale-105"
+    aria-label="Call"
+  >
+    {/* Ping Animation */}
+    <span className="absolute inline-flex h-full w-full rounded-full
+      bg-blue-500 opacity-75 animate-ping" />
+
+    {/* Solid Button */}
+    <span className="relative flex items-center justify-center">
+      <Phone size={22} />
+    </span>
+  </a>
+
+</div>
+
     </div>
   );
 }

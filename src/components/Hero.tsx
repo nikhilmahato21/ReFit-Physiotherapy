@@ -46,23 +46,55 @@ const Hero = () => {
       "
     />
 
-    {/* FLOATING DOCTOR CARD */}
+    {/* DOCTOR DESIGNATION – BOTTOM WIDE */}
+<div
+  className="
+    absolute bottom-6 left-1/2 -translate-x-1/2 z-30
+    w-[90%] max-w-xl
+    bg-black/35 backdrop-blur-md
+    rounded-3xl shadow-xl
+    px-6 py-2
+    text-center
+    border border-white/10
+  "
+>
+  {/* NAME */}
+  <p className="text-lg md:text-2xl font-bold text-white leading-tight">
+    Dr. Rajeev Khinchi
+  </p>
+
+  {/* QUALIFICATIONS */}
+  <p className="text-xs md:text-base font-bold text-white/70 mt-1 leading-snug">
+    PhD, MPT (Sports), BPT
+  </p>
+
+  {/* DETAILS */}
+  <p className="text-xs md:text-base font-bold text-white/70 mt-1 leading-snug">
+    Dip. in Yoga & Nutrition • Certified in Sports Medicine (SMS)
+    <br className="hidden md:block" />
+    Ex.- Moniek Hospital, Jaipur
+  </p>
+
+  {/* EXPERIENCE BADGE */}
+  <div className="mt-2 flex justify-center">
     <div
       className="
-        absolute right-2 top-9/12 -translate-y-1/2 z-30
-        bg-white rounded-2xl shadow-lg
-        px-4 py-3 w-60
-        border border-gray-100
+        px-4 py-1.5
+        rounded-full
+        bg-blue-500/20
+        text-blue-200
+        text-xs md:text-sm
+        font-semibold
+        border border-blue-400/30
+        backdrop-blur-sm
       "
     >
-      
-      <p className="text-sm font-semibold text-gray-900 leading-tight">
-        Dr. Rajeev Khinchi
-      </p>
-      <p className="text-xs text-gray-500 mt-0.5">
-        PhD, MPT (Sports), BPT, Dip. in Yoga & Nutritian, Certified in Sports Medicine (SMS),
-      </p>
+      18+ Years of Experience
     </div>
+  </div>
+</div>
+
+
 
     {/* SOCIAL ICONS */}
     {/* BOOK APPOINTMENT PILL */}
@@ -77,25 +109,7 @@ const Hero = () => {
     {/* Ping Effect */}
     <span className="absolute inset-0 rounded-full bg-blue-600/40 "></span>
 
-    {/* Pill */}
-    <div
-      className="
-        relative flex items-center gap-3
-        px-5 py-3
-        bg-white/95 backdrop-blur-md
-        rounded-full shadow-lg
-        border border-gray-200
-        hover:scale-105 transition-transform
-      "
-    >
-      {/* Dot */}
-      <span className="w-3 h-3 rounded-full bg-blue-600"></span>
-
-      {/* Text */}
-      <span className="text-xs font-semibold text-gray-900 whitespace-nowrap">
-        Book Appointment
-      </span>
-    </div>
+    
   </div>
 </a>
 
@@ -156,7 +170,7 @@ const Hero = () => {
                 <div className="flex items-center justify-between mt-6">
                   <div>
                     <span className="text-2xl font-bold text-gray-900">
-                      10K+
+                      25K+
                     </span>
                     <span className="block text-sm text-gray-500">
                       Happy Patients

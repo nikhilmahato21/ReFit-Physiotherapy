@@ -1,10 +1,10 @@
 const images = {
   leftTop: "https://res.cloudinary.com/dynbpb9u0/image/upload/v1766777664/WhatsApp_Image_2025-12-27_at_01.03.21_oqwd2p.jpg",
-  leftBottom: "https://res.cloudinary.com/dynbpb9u0/image/upload/v1766777663/WhatsApp_Image_2025-12-27_at_01.03.43_wsfnnz.jpg",
+  leftBottom: "https://res.cloudinary.com/dynbpb9u0/image/upload/v1767107457/WhatsApp_Image_2025-12-30_at_18.50.20_quisbk.jpg",
   center: "https://res.cloudinary.com/dynbpb9u0/image/upload/v1766776969/WhatsApp_Image_2025-12-23_at_12.40.38_fcxvtg.jpg",
   rightTop: "https://res.cloudinary.com/dynbpb9u0/image/upload/v1766776969/WhatsApp_Image_2025-12-23_at_12.52.52_givq6a.jpg",
-  rightMiddle: "https://res.cloudinary.com/dynbpb9u0/image/upload/v1766776969/WhatsApp_Image_2025-12-23_at_12.52.52_givq6a.jpg",
-  rightBottom: "https://res.cloudinary.com/dynbpb9u0/image/upload/v1766776969/WhatsApp_Image_2025-12-23_at_12.52.52_givq6a.jpg",
+  rightMiddle: "https://res.cloudinary.com/dynbpb9u0/image/upload/v1767107456/WhatsApp_Image_2025-12-30_at_18.55.52_uten0d.jpg",
+  rightBottom: "https://res.cloudinary.com/dynbpb9u0/image/upload/v1767107457/WhatsApp_Image_2025-12-30_at_18.50.19_dkoifu.jpg",
 };
 
 const ImageGallery = () => {
