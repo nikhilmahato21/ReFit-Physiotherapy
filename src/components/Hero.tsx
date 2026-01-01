@@ -59,9 +59,11 @@ const Hero = () => {
   "
 >
   {/* NAME */}
-  <p className="text-lg md:text-2xl font-bold text-white leading-tight">
-    Dr. Rajeev Khinchi
-  </p>
+  <p className="text-lg md:text-2xl font-bold leading-tight 
+  bg-linear-to-r from-blue-400 to-blue-600 
+  bg-clip-text text-transparent">
+  Dr. Rajeev Khinchi
+</p>
 
   {/* QUALIFICATIONS */}
   <p className="text-xs md:text-base font-bold text-white/70 mt-1 leading-snug">
@@ -70,10 +72,10 @@ const Hero = () => {
 
   {/* DETAILS */}
   <p className="text-xs md:text-base font-bold text-white/70 mt-1 leading-snug">
-    Dip. in Yoga & Nutrition <br className="hidden md:block" /> Certified in Sports Medicine (SMS)
-    <br className="hidden md:block" />
-    Ex.- Moniek Hospital, Jaipur
-  </p>
+  <span className="block">Dip. in Yoga & Nutrition</span>
+  <span className="block">Certified in Sports Medicine (SMS)</span>
+  <span className="block">Ex.- Moniek Hospital, Jaipur</span>
+</p>
 
   {/* EXPERIENCE BADGE */}
   <div className="mt-2 flex justify-center">
