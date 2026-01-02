@@ -60,9 +60,9 @@ const Hero = () => {
 >
   {/* NAME */}
   <p className="text-lg md:text-2xl font-bold leading-tight 
-  bg-linear-to-r from-blue-400 to-blue-600 
+  bg-linear-to-r from-red-400 to-red-500 
   bg-clip-text text-transparent">
-  Dr. Rajeev Khinchi
+  Dr. Rajeev Khinchi(P.T)
 </p>
 
   {/* QUALIFICATIONS */}
@@ -148,60 +148,60 @@ const Hero = () => {
 
               {/* Text Box */}
               <div className="bg-white p-8 rounded-4xl flex flex-col justify-between relative shadow-sm border border-gray-100">
-                <div>
-                  <h3 className="text-xl font-normal text-gray-900 mb-1">
-                    Resolve Your{" "}
-                    <span className="font-bold">
-                      Physiotherapy Issues
-                    </span>{" "}
-                    with Expert Care
-                  </h3>
-                  <p className="text-sm text-gray-500">
-                    Dr. Rajeev Khinchi{" "}
-                    <span className="text-gray-400">
-                      | Consultant Physiotherapist
-                    </span>
-                  </p>
-                  <div className="w-full h-px bg-gray-200 my-4"></div>
-                  <p className="text-sm text-gray-500">
-                    Discover our comprehensive services designed to help you
-                    recover, strengthen, and thrive.
-                  </p>
-                </div>
+  <div>
+    <h3 className="text-xl font-normal text-gray-900 mb-1">
+      Resolve Your{" "}
+      <span className="font-bold">
+        Physiotherapy Issues
+      </span>{" "}
+      with Expert Care
+    </h3>
 
-                <div className="flex items-center justify-between mt-6">
-                  <div>
-                    <span className="text-2xl font-bold text-gray-900">
-                      25K+
-                    </span>
-                    <span className="block text-sm text-gray-500">
-                      Happy Patients
-                    </span>
-                  </div>
+    <p className="text-sm text-gray-500">
+      Dr. Rajeev Khinchi{" "}
+      <span className="text-gray-400">
+        | Consultant Physiotherapist
+      </span>
+    </p>
 
-                  <div className="relative w-20 h-20 flex items-center justify-center cursor-pointer hover:scale-105 transition-transform">
-                    <div className="absolute inset-0 border border-gray-200 rounded-full animate-spin-slow"></div>
-                    <div className="relative">
-                      <span className="absolute inset-0 w-full h-full rounded-full bg-blue-600/40 animate-ping"></span>
-                      <div className="bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg relative">
-                        <svg
-                          className="w-5 h-5 -rotate-45"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    {/* Divider */}
+    <div className="w-full h-px bg-gray-200 my-5"></div>
+
+    {/* CTA */}<a href="#book">
+    <button className="group w-full flex items-center justify-between px-5 py-3 rounded-full border border-blue-600 text-blue-600 font-medium hover:bg-blue-600 hover:text-white transition-all">
+      <span>Book an Appointment</span>
+
+      <span className="w-9 h-9 flex items-center justify-center rounded-full bg-blue-600 text-white group-hover:bg-white group-hover:text-blue-600 transition-all">
+        <svg
+          className="w-4 h-4 -rotate-45"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M14 5l7 7m0 0l-7 7m7-7H3"
+          />
+        </svg>
+      </span>
+    </button></a>
+  </div>
+
+  {/* Stats */}
+  <div className="flex items-center justify-between mt-8">
+    <div>
+      <span className="text-2xl font-bold text-gray-900">
+        25K+
+      </span>
+      <span className="block text-sm text-gray-500">
+        Happy Patients
+      </span>
+    </div>
+  </div>
+</div>
+
 
               {/* Small Image */}
               <div className="relative rounded-4xl overflow-hidden group will-change-transform">

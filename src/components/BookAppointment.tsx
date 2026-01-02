@@ -32,7 +32,7 @@ const BookAppointment = () => {
 
             <div className="pt-4">
               <p className="text-sm text-gray-500">
-                📅 Duration: 30 minutes <br />
+                📅 Duration: 60 minutes <br />
                 🎥 Google Meet (link sent after booking)
               </p>
             </div>
@@ -40,7 +40,7 @@ const BookAppointment = () => {
 
           {/* RIGHT: GOOGLE CALENDAR EMBED */}
           <div className="rounded-2xl overflow-x-auto border border-gray-200">
-         <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ31WsfTVpimU1XtbQL8c1SB0MvZrh6HjrRYZjv3M9hxT9QAg21pTyoY1VPpqCqYY3iP5qY62zOQ?gv=true"  width="100%" height="400" ></iframe>
+         <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2rwIrStJ_MlG2hhSGfBsPlWNm2OyfTz3oagVxc88BI-dAuQwv8KF2P5b701VSSgHu7j4bwTrZg?gv=true"  width="100%" height="400" ></iframe>
           </div>
 
         </div>

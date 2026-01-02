@@ -4,17 +4,17 @@ const features = [
   {
     title: "Personalized, Holistic Care",
     desc: "Tailored treatment plans designed around your condition, goals, and lifestyle.",
-    icon: <HeartPulse className="text-green-600" />,
+    icon: <HeartPulse size={50} className="text-green-600 " />,
   },
   {
     title: "Advanced Treatment Methods",
     desc: "Modern physiotherapy techniques backed by evidence-based clinical practices.",
-    icon: <Stethoscope className="text-purple-600" />,
+    icon: <Stethoscope size={50} className="text-purple-600" />,
   },
   {
     title: "Dedicated to Your Recovery",
     desc: "Focused care and continuous support to help you recover faster and stronger.",
-    icon: <Activity className="text-blue-600" />,
+    icon: <Activity size={50} className="text-blue-600" />,
   },
 ];
 
@@ -43,7 +43,7 @@ const WhyChooseUs = () => {
               key={i}
               className="bg-[#FAF7F2]  rounded-2xl p-8 shadow-sm hover:shadow-md transition"
             >
-              <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center mb-5">
+              <div className="w-16 h-16 rounded-xl bg-gray-100 flex items-center justify-center mb-5">
                 {item.icon}
               </div>
 
