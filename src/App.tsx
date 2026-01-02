@@ -13,6 +13,7 @@ import WhyChooseUs from './components/WhyChooseUs';
 import { Phone} from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "motion/react"
+import AppointmentPopup from './components/AppointmentPopup';
 
 
 
@@ -22,6 +23,7 @@ function App() {
       <Header />
 
       <main>
+        <AppointmentPopup/>
         <Hero />
 <WhyChooseUs />
         <motion.section

@@ -60,8 +60,8 @@ const Hero = () => {
 >
   {/* NAME */}
   <p className="text-lg md:text-2xl font-bold leading-tight 
-  bg-linear-to-r from-red-400 to-red-500 
-  bg-clip-text text-transparent">
+  text-[#c34239] 
+  bg-clip-text ">
   Dr. Rajeev Khinchi(P.T)
 </p>
 
@@ -206,7 +206,7 @@ const Hero = () => {
               {/* Small Image */}
               <div className="relative rounded-4xl overflow-hidden group will-change-transform">
                 <img
-                  src="https://res.cloudinary.com/dynbpb9u0/image/upload/v1767006822/WhatsApp_Image_2025-12-29_at_16.43.14_s005nl.jpg"
+                  src="https://res.cloudinary.com/dynbpb9u0/image/upload/v1767336304/Gemini_Generated_Image_c922p1c922p1c922_zzdtcp.png"
                   alt="Rehabilitation"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
