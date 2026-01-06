@@ -1,35 +1,49 @@
 import { ArrowRight, Stethoscope, Activity, Bone, Brain } from "lucide-react";
 
+import { Link } from "react-router-dom";
+
 const specialties = [
   {
     title: "Sports Physiotherapy",
     desc: "Treatment for sprains, strain, ligament injuries, muscle strains, and sports related injuries.",
     icon: <Activity size={30} className="text-primary" />,
+    detail:true,
+    path:"/service/sports-physio"
   },
   {
     title: "Orthopedic Physiotherapy",
     desc: "Lower back pain,Neck pain,Knee pain ,Heel pain, Frozen shoulder,rotatory cuff tear,spine pain and Tennis elbow with advanced orthopedic physiotherapy.",
     icon: <Bone size={30} className="text-primary" />,
+    detail:true,
+    path:"/service/ortho-physio"
   },
   {
     title: "Neuro Physiotherapy",
     desc: "Rehabilitation for paralysis, stroke, facial palsy, vertigo, Parkinson’s,Numbness,Tingling and pain usaully in hands and feet",
     icon: <Brain size={30} className="text-primary" />,
+    detail:true,
+    path:"/service/neuro-physio"
   },
   {
   title: "Physiotherapy After Surgery ",
   desc: "Post-surgical rehabilitation to restore strength, mobility, and function after orthopedic and neurological surgeries.",
   icon: <Stethoscope size={30} className="text-primary" />,
+  detail:false,
+  path:"/service/sports-physio"
 },
   {
     title: "Sciatica & Spondylitis",
     desc: "Pain management and posture correction for radiating leg pain and spine stiffness.",
     icon: <Activity size={30} className="text-primary" />,
+    detail:false,
+    path:"/service/sports-physio"
   },
   {
     title: "Post-fracture Rehab",
     desc: "Recovery programs for fracture, joint replacement, ligament repair, and mobility restoration.",
     icon: <Bone size={30} className="text-primary" />,
+    detail:false,
+    path:"/service/sports-physio"
   },
 ];
 
@@ -80,9 +94,9 @@ const Specialties = () => {
   </p>
 
   {/* BUTTON */}
-  <button className="flex items-center gap-2 text-primary font-medium hover:underline">
+  <Link to={item?.path}><button  className={`flex items-center gap-2 text-primary font-medium hover:underline ${!item.detail && "hidden"  }`}>
     Learn More <ArrowRight size={18} />
-  </button>
+  </button></Link>
 </div>
 
           ))}
