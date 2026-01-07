@@ -143,4 +143,89 @@ export const services = [
       "Enhanced overall fitness",
     ],
   },
+  {
+  id: "geriatric-physio",
+  title: "Geriatric Physiotherapy",
+  tagline: "Keeping Seniors Moving!",
+  img: "https://blog.cuw.edu/wp-content/uploads/PT-e1692369202777.jpg",
+  description:
+    "Geriatric physiotherapy focuses on helping older adults maintain independence, mobility, and quality of life through personalized rehabilitation and movement-based care.",
+  includes: [
+    "Fall prevention: Balance and strength training to reduce fall risk",
+    "Mobility training: Improving walking, transfers, and daily activities",
+    "Pain management: Techniques to manage chronic pain and discomfort",
+    "Exercise programs: Tailored exercises to improve strength, flexibility, and endurance",
+    "Assistive device training: Learning to use walkers, canes, or other aids",
+  ],
+  conditions: [
+    "Osteoporosis",
+    "Arthritis",
+    "Stroke",
+    "Parkinson's disease",
+    "Dementia",
+  ],
+  benefits: [
+    "Improved mobility and balance",
+    "Reduced pain and discomfort",
+    "Enhanced independence",
+    "Better overall quality of life",
+  ],
+},
+{
+  id: "cardio-physio",
+  title: "Cardiopulmonary Physiotherapy",
+  tagline: "Breathing Easy!",
+  img: "https://wetakecare.in/wp-content/uploads/2021/04/chest.jpg",
+  description:
+    "Cardiopulmonary physiotherapy focuses on improving heart and lung function in patients with respiratory and cardiac conditions, helping them breathe easier and regain physical endurance.",
+  includes: [
+    "Breathing exercises: Techniques to improve lung function and oxygenation",
+    "Exercise training: Gradual programs to improve cardiovascular fitness",
+    "Chest clearance: Techniques to clear mucus and respiratory secretions",
+    "Patient education: Learning to manage symptoms and self-manage conditions",
+  ],
+  conditions: [
+    "COPD (Chronic Obstructive Pulmonary Disease)",
+    "Asthma",
+    "Heart failure",
+    "Post-surgical respiratory issues",
+    "Cystic fibrosis",
+  ],
+  benefits: [
+    "Improved breathing and lung function",
+    "Enhanced exercise tolerance",
+    "Reduced symptoms and hospitalizations",
+    "Better overall quality of life",
+  ],
+},
+{
+  id: "pediatric-physio",
+  title: "Pediatric Physiotherapy",
+  tagline: "Helping Little Ones Move Better!",
+  img: "https://physiocuredubai.com/wp-content/uploads/2025/02/physiotherapist-helping-patient-pediatric-physiotherapy.jpg",
+  description:
+    "Pediatric physiotherapy focuses on improving movement, strength, and functional abilities in infants, children, and adolescents, supporting healthy growth and developmental milestones.",
+  includes: [
+    "Developmental assessment: Evaluating motor skills, posture, and movement patterns",
+    "Gross motor training: Improving crawling, walking, running, and coordination",
+    "Strength and balance exercises: Building stability and muscle control",
+    "Postural correction: Addressing alignment and movement efficiency",
+    "Parent education: Teaching home exercises and care strategies",
+  ],
+  conditions: [
+    "Developmental delay",
+    "Cerebral palsy",
+    "Muscular dystrophy",
+    "Spina bifida",
+    "Pediatric orthopedic conditions",
+  ],
+  benefits: [
+    "Improved motor skills and coordination",
+    "Enhanced independence in daily activities",
+    "Better posture and movement patterns",
+    "Support for healthy growth and development",
+  ],
+},
+
+
 ];

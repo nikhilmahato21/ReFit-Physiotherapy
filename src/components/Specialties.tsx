@@ -1,4 +1,4 @@
-import { ArrowRight, Stethoscope, Activity, Bone, Brain } from "lucide-react";
+import { ArrowRight,  Activity, Bone, Brain,  HeartPulse, Baby, PersonStanding } from "lucide-react";
 
 import { Link } from "react-router-dom";
 
@@ -25,26 +25,28 @@ const specialties = [
     path:"/service/neuro-physio"
   },
   {
-  title: "Physiotherapy After Surgery ",
-  desc: "Post-surgical rehabilitation to restore strength, mobility, and function after orthopedic and neurological surgeries.",
-  icon: <Stethoscope size={30} className="text-primary" />,
-  detail:false,
-  path:"/service/sports-physio"
+  title: "Geriatric Physiotherapy",
+  desc: "Rehabilitation focused on improving mobility, balance, strength, and independence in older adults.",
+  icon: <PersonStanding size={30} className="text-primary" />,
+  detail: true,
+  path: "/service/geriatric-physio",
 },
-  {
-    title: "Sciatica & Spondylitis",
-    desc: "Pain management and posture correction for radiating leg pain and spine stiffness.",
-    icon: <Activity size={30} className="text-primary" />,
-    detail:false,
-    path:"/service/sports-physio"
-  },
-  {
-    title: "Post-fracture Rehab",
-    desc: "Recovery programs for fracture, joint replacement, ligament repair, and mobility restoration.",
-    icon: <Bone size={30} className="text-primary" />,
-    detail:false,
-    path:"/service/sports-physio"
-  },
+{
+  title: "Cardiorespiratory (Heart & Lungs)",
+  desc: "Physiotherapy care for heart and lung conditions to improve breathing capacity, endurance, and overall function.",
+  icon: <HeartPulse size={30} className="text-primary" />,
+  detail: true,
+  path: "/service/cardio-physio",
+},
+{
+  title: "Pediatric Physiotherapy",
+  desc: "Therapy for infants and children to improve movement, strength, coordination, and functional development.",
+  icon: <Baby size={30} className="text-primary" />,
+  detail: true,
+  path: "/service/pediatric-physio",
+},
+
+
 ];
 
 const Specialties = () => {

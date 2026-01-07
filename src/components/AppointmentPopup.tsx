@@ -45,7 +45,7 @@ const AppointmentPopup = () => {
         </h3>
 
         <p className="text-gray-500 text-sm mb-6">
-          Schedule a session with <span className="font-bold text-gray-600">Dr. Rajiv Khinchi </span> today for expert physiotherapy care.
+          Schedule a session with <span className="font-bold text-gray-600">Dr. Rajeev Khinchi </span> today for expert physiotherapy care.
         </p>
 
         <button
