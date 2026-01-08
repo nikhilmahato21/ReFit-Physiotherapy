@@ -6,12 +6,12 @@ const BookAppointment = () => {
         {/* HEADER */}
         <div className="text-center mb-14">
           <h2 className="text-4xl font-bold text-gray-900">
-            Book a <span className="text-indigo-600">Free Strategy Call</span>
-          </h2>
+  Book an <span className="text-indigo-600">Appointment</span>
+</h2>
           <p className="mt-4 text-gray-600 max-w-xl mx-auto">
-            Schedule a 30-minute consultation with our marketing experts.
-            No sales pressure. Just clarity.
-          </p>
+  Get expert physiotherapy care designed to relieve pain and restore mobility.
+</p>
+
         </div>
 
         {/* CARD */}
@@ -32,9 +32,10 @@ const BookAppointment = () => {
 
             <div className="pt-4">
               <p className="text-sm text-gray-500">
-                📅 Duration: 60 minutes <br />
-                🎥 Google Meet (link sent after booking)
-              </p>
+  📅 We’ll share your appointment details after booking <br />
+  🏥 Visit the clinic or consult online via Google Meet
+</p>
+
             </div>
           </div>
 
