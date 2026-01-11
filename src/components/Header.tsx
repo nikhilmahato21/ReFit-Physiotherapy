@@ -47,7 +47,7 @@ const Header = () => {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-physio-bg  p-4 flex flex-col gap-4">
+        <div className="md:hidden absolute top-full left-0 w-full bg-physio-bg  p-6 flex flex-col gap-4">
           <a href="#service" className="font-medium text-gray-700">Services</a>
           <a href="#condition" className="font-medium text-gray-700">Conditions Treated</a>
           <a href="#about" className="font-medium text-gray-700">About Us </a>
