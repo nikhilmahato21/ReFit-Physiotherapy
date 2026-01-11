@@ -1,5 +1,6 @@
 import { CheckCircle, Dumbbell, Bone, Brain } from "lucide-react";
 import type { JSX } from "react";
+import { Link } from "react-router-dom";
 
 const sports = [
   "Heel Pain / Ankle Sprain",
@@ -43,6 +44,11 @@ const iconMap: Record<string, JSX.Element> = {
   "Neuro Physiotherapy": <Brain size={26} className="text-primary" />,
 };
 
+const sections = [
+  { id: "sports", title: "Sports Physiotherapy", items: sports },
+  { id: "ortho", title: "Ortho Physiotherapy", items: ortho },
+  { id: "neuro", title: "Neuro Physiotherapy", items: neuro },
+];
 const Conditions = () => {
   return (
     <section id="condition" className="py-28 px-6 relative bg-[#F5F7FA]">
@@ -50,11 +56,11 @@ const Conditions = () => {
 
         {/* HEADER */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-physio-accent ">
+          <h2 className="text-4xl md:text-5xl font-bold text-physio-accent">
             Conditions <span className="text-primary text-gray-900">We Treat</span>
           </h2>
 
-          <div className="w-20 h-1 bg-primary mx-auto mt-4 rounded-full"></div>
+          <div className="w-20 h-1 bg-primary mx-auto mt-4 rounded-full" />
 
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
             We offer advanced physiotherapy solutions for orthopedic, neurological,
@@ -64,39 +70,46 @@ const Conditions = () => {
 
         {/* 3 COLUMNS */}
         <div className="grid md:grid-cols-3 gap-10">
-          {[
-            { title: "Sports Physiotherapy", items: sports },
-            { title: "Ortho Physiotherapy", items: ortho },
-            { title: "Neuro Physiotherapy", items: neuro },
-          ].map((section, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-3xl p-10 border border-gray-200 shadow-sm hover:shadow-xl hover:scale-105 transition-all"
+          {sections.map((section) => (
+            <Link
+              key={section.id}
+              to={`/condition/${section.id}`}
+              className="group"
             >
-              {/* Heading with circular icon */}
-              <div className=" items-center  mb-8">
-                <div className="w-12 h-12 mb-3 rounded-full bg-blue-50 flex items-center justify-center">
-                  {iconMap[section.title]}
+              <div
+                className="
+                  bg-white rounded-3xl p-10 border border-gray-200
+                  shadow-sm transition-all
+                  hover:shadow-xl hover:scale-105
+                  cursor-pointer
+                "
+              >
+                {/* Heading */}
+                <div className="mb-8">
+                  <div className="w-12 h-12 mb-3 rounded-full bg-blue-50 flex items-center justify-center">
+                    {iconMap[section.title]}
+                  </div>
+                  <h3 className="text-2xl font-bold text-primary group-hover:underline">
+                    {section.title}
+                  </h3>
                 </div>
-                <h3 className="text-2xl font-bold text-primary">
-                  {section.title}
-                </h3>
-              </div>
 
-              <ul className="space-y-4 text-gray-700">
-                {section.items.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle size={20} className="text-primary" />
-                    <span className="text-[16px] leading-snug">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+                <ul className="space-y-4 text-gray-700">
+                  {section.items.map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <CheckCircle size={20} className="text-primary shrink-0" />
+                      <span className="text-[16px] leading-snug">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
     </section>
   );
 };
+
 
 export default Conditions;
