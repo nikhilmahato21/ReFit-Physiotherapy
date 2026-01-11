@@ -19,10 +19,10 @@ export default function CTASection() {
           </div>
 
           {/* CTA */}
-          <button className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-gray-900">
+          <a href="#book"><button className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-gray-900">
             Book an Appointment
             <span className="text-lg">→</span>
-          </button>
+          </button></a>
 
           {/* ILLUSTRATION (SUBTLE) */}
           <div className="absolute right-6 bottom-6 opacity-20">
@@ -52,7 +52,7 @@ export default function CTASection() {
             <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm">
               <Phone size={20} className="text-gray-900" />
             </div>
-            <span className="text-xl font-semibold text-gray-900 tracking-wide">
+            <span className="sm:text-xl font-semibold text-gray-900 tracking-wide">
              +91 94612 03939
             </span>
           </div>

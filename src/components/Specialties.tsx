@@ -1,4 +1,4 @@
-import { ArrowRight,  Activity, Bone, Brain,  HeartPulse, Baby, PersonStanding } from "lucide-react";
+import { ArrowRight,  Bone, Brain,  HeartPulse, Baby, PersonStanding, Volleyball } from "lucide-react";
 
 import { Link } from "react-router-dom";
 
@@ -6,7 +6,7 @@ const specialties = [
   {
     title: "Sports Physiotherapy",
     desc: "Treatment for sprains, strain, ligament injuries, muscle strains, and sports related injuries.",
-    icon: <Activity size={30} className="text-primary" />,
+    icon: <Volleyball size={30} className="text-primary" />,
     detail:true,
     path:"/service/sports-physio"
   },

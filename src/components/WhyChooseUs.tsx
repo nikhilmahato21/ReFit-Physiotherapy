@@ -55,9 +55,9 @@ const WhyChooseUs = () => {
                 {item.desc}
               </p>
 
-              <span className="text-sm font-medium text-primary cursor-pointer hover:underline">
+              {/* <span className="text-sm font-medium text-primary cursor-pointer hover:underline">
                 Learn more →
-              </span>
+              </span> */}
             </div>
           ))}
         </div>

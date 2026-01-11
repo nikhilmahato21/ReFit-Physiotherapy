@@ -72,38 +72,41 @@ const Conditions = () => {
         <div className="grid md:grid-cols-3 gap-10">
           {sections.map((section) => (
             <Link
-              key={section.id}
-              to={`/condition/${section.id}`}
-              className="group"
-            >
-              <div
-                className="
-                  bg-white rounded-3xl p-10 border border-gray-200
-                  shadow-sm transition-all
-                  hover:shadow-xl hover:scale-105
-                  cursor-pointer
-                "
-              >
-                {/* Heading */}
-                <div className="mb-8">
-                  <div className="w-12 h-12 mb-3 rounded-full bg-blue-50 flex items-center justify-center">
-                    {iconMap[section.title]}
-                  </div>
-                  <h3 className="text-2xl font-bold text-primary group-hover:underline">
-                    {section.title}
-                  </h3>
-                </div>
+  to={`/condition/${section.id}`}
+  className="group h-full"
+>
+  <div
+    className="
+      h-full flex flex-col
+      bg-white rounded-3xl p-10
+      border border-gray-200
+      shadow-sm transition-all
+      hover:shadow-xl hover:scale-105
+      cursor-pointer
+    "
+  >
+    {/* Header */}
+    <div className="mb-8">
+      <div className="w-12 h-12 mb-3 rounded-full bg-blue-50 flex items-center justify-center">
+        {iconMap[section.title]}
+      </div>
+      <h3 className="text-2xl font-bold text-primary ">
+        {section.title}
+      </h3>
+    </div>
 
-                <ul className="space-y-4 text-gray-700">
-                  {section.items.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <CheckCircle size={20} className="text-primary shrink-0" />
-                      <span className="text-[16px] leading-snug">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </Link>
+    {/* List grows to fill space */}
+    <ul className="space-y-4 text-gray-700 flex-1">
+      {section.items.map((item, i) => (
+        <li key={i} className="flex items-start gap-3">
+          <CheckCircle size={20} className="text-primary shrink-0" />
+          <span className="text-[16px] leading-snug">{item}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Link>
+
           ))}
         </div>
       </div>
