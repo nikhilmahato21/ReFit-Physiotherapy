@@ -59,12 +59,25 @@ const Hero = () => {
   "
 >
   {/* NAME */}
-  <p className="text-lg md:text-2xl font-bold leading-tight 
-  text-[#c34239] 
-  bg-clip-text ">
-  Dr. Rajeev Khinchi(P.T)
-</p>
+<div className="flex flex-col items-center">
+  
 
+  <p
+  className="
+    inline-block
+    px-5 py-2
+    rounded-full
+    text-md md:text-2xl font-bold
+    text-[#FCE8E6]
+    bg-[#C34239]/25
+    border border-[#C34239]/40
+    backdrop-blur-sm
+    shadow-[0_8px_20px_rgba(195,66,57,0.25)]
+  "
+>
+  Dr. Rajeev Khinchi (P.T)
+</p>
+</div>
   {/* QUALIFICATIONS */}
   <p className="text-xs md:text-base font-bold text-white/70 mt-1 leading-snug">
     PhD, MPT (Sports), BPT
@@ -81,7 +94,7 @@ const Hero = () => {
   <div className="mt-2 flex justify-center">
     <div
       className="
-        px-4 py-1.5
+        px-3 py-1.5
         rounded-full
         bg-blue-500/20
         text-blue-200
@@ -98,8 +111,7 @@ const Hero = () => {
 
 
 
-    {/* SOCIAL ICONS */}
-    {/* BOOK APPOINTMENT PILL */}
+    
 <a
  href="#book"
   className="

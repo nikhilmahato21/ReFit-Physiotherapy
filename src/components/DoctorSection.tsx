@@ -62,7 +62,7 @@ const DoctorSection = () => {
           {/* YEARS OF EXPERIENCE */}
           <div className="bg-[#E8F3FF] rounded-2xl p-8 text-center shadow-sm">
             <CheckCircle className="mx-auto mb-3 text-blue-600" />
-            <h3 className="text-2xl sm:text-4xl  font-bold text-stone-800">10+</h3>
+            <h3 className="text-2xl sm:text-4xl  font-bold text-stone-800">18+</h3>
             <p className="text-gray-600 font-medium mt-1">
               Years of Experience
             </p>
