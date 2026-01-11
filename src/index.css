@@ -37,10 +37,16 @@
 
 /* Default (Desktop) */
 .awards-track {
-  --marquee-speed: 35s;
-  display: flex;
-  width: 200%;
-  animation: marquee var(--marquee-speed) linear infinite;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .awards-track:hover {
@@ -58,14 +64,14 @@
 /* Tablet */
 @media (max-width: 1024px) {
   .awards-track {
-    --marquee-speed: 35s;
+    --marquee-speed: 25s;
   }
 }
 
 /* Mobile */
 @media (max-width: 640px) {
   .awards-track {
-    --marquee-speed: 15s;
+    --marquee-speed: 10s;
   }
 }
 

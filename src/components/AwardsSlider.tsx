@@ -15,31 +15,22 @@ export const AwardsSlider = () => {
     <div className="relative overflow-hidden w-full mt-24">
 
       {/* Fade edges */}
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-linear-to-r from-[#F7F8FA] to-transparent z-10" />
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-linear-to-l from-[#F7F8FA] to-transparent z-10" />
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#F7F8FA] to-transparent z-10" />
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[#F7F8FA] to-transparent z-10" />
 
       {/* TRACK */}
-      <div className="awards-track flex items-center gap-10 md:gap-16">
-        {[...awards, ...awards, ...awards].map((img, i) => (
+      <div className="awards-track flex w-max items-center gap-6 md:gap-16">
+        {[...awards, ...awards].map((img, i) => (
           <div
             key={i}
-            className="
-              award-item 
-              flex items-center justify-center
-              rounded-xl
-              
-              
-              hover:shadow-xl
-              transition-all duration-300
-            "
+            className="flex items-center justify-center shrink-0"
           >
             <img
               src={img}
               alt="Award"
               className="
-                h-44 w-44 md:h-60 md:w-60
-                object-cover
-                rounded-xl
+                h-32 w-32 md:h-60 md:w-60
+                object-cover rounded-xl
                 transition-transform duration-300
                 hover:scale-105
               "
@@ -47,8 +38,8 @@ export const AwardsSlider = () => {
           </div>
         ))}
       </div>
-
     </div>
   );
 };
+
 
