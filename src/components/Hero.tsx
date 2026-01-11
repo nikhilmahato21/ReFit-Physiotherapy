@@ -65,7 +65,7 @@ const Hero = () => {
   <p
   className="
     inline-block
-    px-5 py-2
+    px-5 py-2 mb-2
     rounded-full
     text-md md:text-2xl font-bold
     text-[#FCE8E6]
