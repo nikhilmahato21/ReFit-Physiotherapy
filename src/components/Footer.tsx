@@ -20,7 +20,7 @@ export default function Footer() {
           </div>
 
           {/* QUICK LINKS */}
-          <div>
+          {/* <div>
             <h4 className="font-semibold text-gray-900 mb-4">
               Quick Links
             </h4>
@@ -36,10 +36,10 @@ export default function Footer() {
                 )
               )}
             </ul>
-          </div>
+          </div> */}
 
           {/* SERVICES */}
-          <div>
+          {/* <div>
             <h4 className="font-semibold text-gray-900 mb-4">
               Services
             </h4>
@@ -49,7 +49,7 @@ export default function Footer() {
               <li>Neurological Physiotherapy</li>
               <li>Post-Surgery Rehab</li>
             </ul>
-          </div>
+          </div> */}
 
           {/* CONTACT */}
           <div>
@@ -70,7 +70,7 @@ export default function Footer() {
 
               <li className="flex  gap-3">
                 <MapPin size={16} className="shrink-0" />
-                <span>No. 7, Durga vatika, Brij Mohan Marg, opposite BSNL colony, Vinoba Vihar, Model Town, Jagatpura, Jaipur, Rajasthan 302017</span>
+                <span>Address: 7, Durga vatika, opposite BSNL colony, Modal town, Malviya Nagar, Jaipur 302017</span>
               </li>
             </ul>
           </div>

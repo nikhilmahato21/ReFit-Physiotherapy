@@ -14,6 +14,7 @@ import { Phone} from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "motion/react"
 import AppointmentPopup from '../components/AppointmentPopup';
+import HappyPatients from '../components/HappyPatients';
 
 
 const Landing = () => {
@@ -73,6 +74,7 @@ const Landing = () => {
         >
           <Testimonials />
         </motion.section>
+        <HappyPatients/>
 
         <motion.section
           initial={{ opacity: 0, y: 30 }}

@@ -33,6 +33,9 @@ const Header = () => {
           <a href="#review" className="hover:text-black transition flex items-center gap-1">
             Reviews
           </a>
+          <a href="#happy" className="hover:text-black transition flex items-center gap-1">
+            Happy Patients
+          </a>
            <a href="#contact" className="hover:text-black transition">Contact Us</a>
         </nav>
 
@@ -52,6 +55,7 @@ const Header = () => {
           <a href="#condition" className="font-medium text-gray-700">Conditions Treated</a>
           <a href="#about" className="font-medium text-gray-700">About Us </a>
           <a href="#review" className="font-medium text-gray-700">Reviews</a>
+           <a href="#happy" className="font-medium text-gray-700">Happy Patients</a>
           <a href="#contact" className="font-medium text-gray-700">Contact Us </a>
           <a 
             href={`tel:${phoneNumber}`}

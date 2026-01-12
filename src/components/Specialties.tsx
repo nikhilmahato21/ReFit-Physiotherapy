@@ -86,7 +86,7 @@ const Specialties = () => {
   <div className="mb-5 text-primary text-blue-500">{item.icon}</div>
 
   {/* TITLE */}
-  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+  <h3 className="text-2xl font-bold text-gray-500 mb-2">
     {item.title}
   </h3>
 

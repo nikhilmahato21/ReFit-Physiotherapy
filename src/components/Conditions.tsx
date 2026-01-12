@@ -39,9 +39,9 @@ const neuro = [
 
 // ICON MAP
 const iconMap: Record<string, JSX.Element> = {
-  "Sports Physiotherapy": <Dumbbell size={26} className="text-primary" />,
-  "Ortho Physiotherapy": <Bone size={26} className="text-primary" />,
-  "Neuro Physiotherapy": <Brain size={26} className="text-primary" />,
+  "Sports Physiotherapy": <Dumbbell size={26} className="text-primary text-blue-500" />,
+  "Ortho Physiotherapy": <Bone size={26} className="text-primary text-blue-500" />,
+  "Neuro Physiotherapy": <Brain size={26} className="text-primary text-blue-500" />,
 };
 
 const sections = [
@@ -71,10 +71,7 @@ const Conditions = () => {
         {/* 3 COLUMNS */}
         <div className="grid md:grid-cols-3 gap-10">
           {sections.map((section) => (
-            <Link
-  to={`/condition/${section.id}`}
-  className="group h-full"
->
+            <Link to={`/condition/${section.id}`}className="group h-full">
   <div
     className="
       h-full flex flex-col
@@ -91,7 +88,7 @@ const Conditions = () => {
         {iconMap[section.title]}
       </div>
       <h3 className="text-2xl font-bold text-primary ">
-        {section.title}
+        <span className="text-physio-accent">{section.title.split(" ")[0]}</span>  Physiotherapy
       </h3>
     </div>
 

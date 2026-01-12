@@ -140,7 +140,7 @@ function EditorialSection({
               <p className="text-lg leading-relaxed">
                 {hasColon ? (
                   <>
-                    <span className="font-bold text-gray-700">
+                    <span className="font-bold text-red-800">
                       {label}:
                     </span>{" "}
                     <span className="font-semibold text-gray-600">
