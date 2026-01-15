@@ -65,14 +65,11 @@ const Hero = () => {
   <p
   className="
     inline-block
-    px-5 py-2 mb-2
+     mb-1
     rounded-full
     text-md md:text-2xl font-bold
-    text-[#FCE8E6]
-    bg-[#C34239]/25
-    border border-[#C34239]/40
-    backdrop-blur-sm
-    shadow-[0_8px_20px_rgba(195,66,57,0.25)]
+    text-[#C34239]
+    
   "
 >
   Dr. Rajeev Khinchi (P.T)

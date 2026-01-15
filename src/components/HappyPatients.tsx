@@ -19,7 +19,7 @@ const HappyPatients = () => {
         </div>
 
         {/* VIDEO GRID */}
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-3 gap-10">
 
           {/* VIDEO 1 */}
           <div className="
@@ -65,6 +65,28 @@ const HappyPatients = () => {
               </h3>
               <p className="text-gray-600 mt-2 text-sm">
                 A patient shares their experience of overcoming cervical pain through personalized physiotherapy and guided rehabilitation.
+              </p>
+            </div>
+          </div>
+          <div className="
+            bg-white rounded-3xl border border-gray-200
+            shadow-sm overflow-hidden
+          ">
+            <div className="relative aspect-video">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/UnpMzp5OnT8"
+                title="Happy Patient Testimonial"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-primary">
+                Meniscus Tear Rehabilitation Journey
+              </h3>
+              <p className="text-gray-600 mt-2 text-sm">
+                A patient shares how guided physiotherapy and progressive rehab helped them recover from a meniscus tear and regain knee strength.
               </p>
             </div>
           </div>

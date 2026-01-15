@@ -21,7 +21,35 @@ const testimonials = [
     role: "Patient",
     image: "https://placehold.co/400",
     text: "All facilities are good and Dr Rajeev behavior very nice its important to a patient, Dr behavior should be friendly/ care taker ... I'm satisfied with his facilities n knowledge of work."
+  },
+  {
+    name: "Karm jatt",
+    role: "Patient",
+    image: "https://placehold.co/400",
+    text: "I was suffering from severe back pain from quite some time and daily activities had become difficult. After undergoing treatment at Refit physiotherapy, i experienced significant relief. The exercises and therapy sessions were very effective. Dr Rajeev explained everything clearly and guided me with proper posture and strengthning. I feel much better now. Highly recommend!"
+  },
+  {
+    name: "Bharti Chanchlani",
+    role: "Patient",
+    image: "https://placehold.co/400",
+    text: "Dr Rajeev was magical in curing my cronic knee pain which was running for more than years Very humble attentive and he treates every patient with patience Honest about the treatment and brilliant doctor"
   }
+  ,
+  {
+    name: "Usha Verma",
+    role: "Patient",
+    image: "https://placehold.co/400",
+    text: "I had pain in my back since 2 months. I visited refit physiotherapy centre for treatment.within one week there is significant reduction in pain.exercises and treatment plan was very effective.highly recommended!"
+  }
+  ,
+  {
+    name: "Deeksha rani sharma",
+    role: "Patient",
+    image: "https://placehold.co/400",
+    text: "I had neck Pain since 1 month, I came to refit physiotherapy clinic for treatment, after taking treatment my pain has been completely subsided . Thanks to refit team for providing effective treatment."
+  }
+  
+
 ];
 
 export default function Testimonials() {
